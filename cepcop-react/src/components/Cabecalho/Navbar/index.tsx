@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+//import userImage from '../../../img/';
 
 
 const navItem = styled.p`
@@ -22,11 +23,15 @@ function Navbar() {
     
     return (
         <nav>
-            <ul>
+            <ul className='header__menu'>
                 {navItens.map((navitem, key) => (
-                    <li key={key} style={{textDecoration: 'none'}}>
-                        <img src="" alt="" />
-                        <p className='navItem'>
+                    <li 
+                        key={key} 
+                        style={{textDecoration: 'none'}}
+                        className='header__menu___item'
+                    >
+                        <img className='header__img' src={} alt="" />
+                        <p>
                             {navitem.nome}
                         </p>
                     </li>
