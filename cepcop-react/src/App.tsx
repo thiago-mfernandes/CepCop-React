@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Cabecalho from './components/Cabecalho'
+import Cabecalho from './components/Cabecalho';
+import { GlobalStyle } from './components/GlobalStyle';
 
 function App() {
   return (
     <div className="App">
-      <p>oi</p>
+      <GlobalStyle />
       <Cabecalho />
     </div>
   );

@@ -1,4 +1,10 @@
+import styled from 'styled-components';
 
+
+const navItem = styled.p`
+    color: $verde-padrao;
+    font-size: 50px;
+`
 
 function Navbar() {
 
@@ -18,9 +24,9 @@ function Navbar() {
         <nav>
             <ul>
                 {navItens.map((navitem, key) => (
-                    <li key={key}>
+                    <li key={key} style={{textDecoration: 'none'}}>
                         <img src="" alt="" />
-                        <p style={{textTransform: 'none'}}>
+                        <p className='navItem'>
                             {navitem.nome}
                         </p>
                     </li>
