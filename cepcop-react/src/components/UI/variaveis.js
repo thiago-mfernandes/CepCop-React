@@ -1,5 +1,4 @@
 
-
 export const amareloPadrao = '#fbff40b3';
 
 export const azulAlertaPagCadastro = '#cff4fccc';

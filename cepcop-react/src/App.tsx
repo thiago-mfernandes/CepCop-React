@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Cabecalho from './components/Cabecalho';
 import { GlobalStyle } from './components/GlobalStyle';
