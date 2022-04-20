@@ -1,11 +1,13 @@
 import styled from 'styled-components';
-//import userImage from '../../../img/';
 
 
-const navItem = styled.p`
-    color: $verde-padrao;
-    font-size: 50px;
-`
+
+// const navItem = styled.p`
+//     color: $verde-padrao;
+//     font-size: 50px;
+// `
+
+
 
 function Navbar() {
 
@@ -29,8 +31,7 @@ function Navbar() {
                         key={key} 
                         style={{textDecoration: 'none'}}
                         className='header__menu___item'
-                    >
-                        <img className='header__img' src={} alt="" />
+                    >                        
                         <p>
                             {navitem.nome}
                         </p>

@@ -1,9 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import Navbar from "./Navbar";
 import styled from "styled-components";
-import {cinzaClaro, cinzaEscuro} from "../UI/variaveis";
-const userImage: string = require("./../../img/vince-fleming2.jpg") as string;
-
-const StyledHeader = styled.header`
+import { cinzaClaro, cinzaEscuro } from "../UI/variaveis";
+const userImage = require("./../../img/vince-fleming2.jpg");
+const StyledHeader = styled.header `
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -18,18 +18,15 @@ const StyledHeader = styled.header`
         
     } 
     
-`
-
-const Container = styled.div`
+`;
+const Container = styled.div `
     display: flex;
     justify-content: center;
-`
-
-const HeaderInfo = styled.div`
+`;
+const HeaderInfo = styled.div `
     width: 100%;
-`
-
-const HeaderTitle = styled.h1`
+`;
+const HeaderTitle = styled.h1 `
     color: ${cinzaEscuro};
     font-size: 75%;
     font-style: italic;
@@ -42,23 +39,9 @@ const HeaderTitle = styled.h1`
         padding-left: 5%;
         text-align: left;
     }
-`
-
+`;
 function Header() {
-    return (
-        <StyledHeader>
-            <Container>
-                <HeaderInfo>
-                    <HeaderTitle>Painel Administrativo</HeaderTitle>
-                    <div>
-                        <p>Olá <span>fulano</span></p>
-                        <img className='header__img' src={userImage} alt="" />
-                    </div>
-                </HeaderInfo>
-            </Container>
-            <Navbar />
-        </StyledHeader>
-    )
+    return (_jsxs(StyledHeader, { children: [_jsx(Container, { children: _jsxs(HeaderInfo, { children: [_jsx(HeaderTitle, { children: "Painel Administrativo" }), _jsxs("div", { children: [_jsxs("p", { children: ["Ol\u00E1 ", _jsx("span", { children: "fulano" })] }), _jsx("img", { className: 'header__img', src: userImage, alt: "" })] })] }) }), _jsx(Navbar, {})] }));
 }
-
 export default Header;
+//# sourceMappingURL=index.js.map
