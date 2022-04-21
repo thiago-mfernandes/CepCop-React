@@ -1,7 +1,20 @@
-import { azulEscuroFosco, cinzaMedio } from "src/components/UI/variaveis";
+import {
+  azulEscuroFosco,
+  cinzaEscuro,
+  cinzaMedio,
+} from "src/components/UI/variaveis";
 import styled from "styled-components";
-import { MdDescription, MdGroups, MdHome, MdOutlineSettings, MdPendingActions, MdPeopleOutline, MdSchool, MdSupervisorAccount } from "react-icons/md";
-import { FaGraduationCap } from 'react-icons/fa'
+import {
+  MdDescription,
+  MdGroups,
+  MdHome,
+  MdOutlineSettings,
+  MdPendingActions,
+  MdPeopleOutline,
+  MdSchool,
+  MdSupervisorAccount,
+} from "react-icons/md";
+import { FaGraduationCap } from "react-icons/fa";
 
 const NavLista = styled.ul`
   display: flex;
@@ -74,6 +87,31 @@ const NavItem = styled.li`
   }
 `;
 
+const NavIcon = styled.i`
+  color: ${cinzaEscuro};
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0 7.5%;
+
+  //---------------------------------------------------->
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+`;
+
+const NavLink = styled.p`
+  color: ${cinzaEscuro};
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  width: 100%;
+  //-------------------------------------------->
+  @media screen and (max-width: 768px) {
+    width: 75%;
+    padding-left: 10%;
+  }
+`;
+
 function Navbar() {
   const navItens = [
     { id: 1, icone: <MdHome />, nome: "Home" },
@@ -86,14 +124,14 @@ function Navbar() {
     { id: 8, icone: <FaGraduationCap />, nome: "Cursos" },
     { id: 9, icone: <MdOutlineSettings />, nome: "Configurações" },
   ];
-  
+
   return (
     <nav>
       <NavLista>
         {navItens.map((navitem, key) => (
           <NavItem key={key}>
-            <i>{navitem.icone}</i>
-            <p>{navitem.nome}</p>
+            <NavIcon>{navitem.icone}</NavIcon>
+            <p className="link-menu-nav">{navitem.nome}</p>
           </NavItem>
         ))}
       </NavLista>
