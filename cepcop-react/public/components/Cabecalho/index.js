@@ -16,8 +16,7 @@ const StyledHeader = styled.header `
         box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
         margin-bottom: 12.5%;
         
-    } 
-    
+    }     
 `;
 const Container = styled.div `
     display: flex;
