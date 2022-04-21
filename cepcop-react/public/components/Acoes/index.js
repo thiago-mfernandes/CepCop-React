@@ -1,9 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import Adicionar from "./Adicionar";
 import Buscar from "./Buscar";
 import styled from "styled-components";
 import { brancoBg } from "../UI/variaveis";
-
-const CardAcoes = styled.section`
+const CardAcoes = styled.section `
     height: 85%;
     width: 95%;
     background-color: ${brancoBg};
@@ -18,14 +18,8 @@ const CardAcoes = styled.section`
         border-radius: 0;
     }
 `;
-
 function Acoes() {
-    return (
-        <CardAcoes>
-            <Adicionar />
-            <Buscar />
-        </CardAcoes>
-    );
+    return (_jsxs(CardAcoes, { children: [_jsx(Adicionar, {}), _jsx(Buscar, {})] }));
 }
-
 export default Acoes;
+//# sourceMappingURL=index.js.map
