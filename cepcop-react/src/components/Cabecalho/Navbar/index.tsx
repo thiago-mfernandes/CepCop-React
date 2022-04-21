@@ -1,11 +1,19 @@
 import styled from 'styled-components';
 
-
-
-// const navItem = styled.p`
-//     color: $verde-padrao;
-//     font-size: 50px;
-// `
+const NavLista = styled.ul`
+    display: flex;
+    flex-direction: column;
+    //-------------------------------------------->
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 25vh;
+        width: 100%;
+        border: none;
+        overflow-x: auto;
+    }
+`
 
 
 
@@ -25,7 +33,7 @@ function Navbar() {
     
     return (
         <nav>
-            <ul className='header__menu'>
+            <NavLista>
                 {navItens.map((navitem, key) => (
                     <li 
                         key={key} 
@@ -37,7 +45,7 @@ function Navbar() {
                         </p>
                     </li>
                 ))}
-            </ul>
+            </NavLista>
         </nav>
     )
 }

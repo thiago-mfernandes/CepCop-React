@@ -12,7 +12,7 @@ const StyledHeader = styled.header `
     box-shadow: 4px 0px 20px 0px rgba(0,0,0,.25);
     padding: 3.5% 0 0;
     //----------------------------------------------->
-    @media screen and (min-width:0px) and (max-width:768px) {
+    @media screen and(max-width:768px) {
         box-shadow: 0 4px 50px 0 rgba(0,0,0,.15);
         margin-bottom: 12.5%;
         
@@ -34,7 +34,7 @@ const HeaderTitle = styled.h1 `
     text-align: center;
 
     //----------------------------------------->
-    @media screen and (min-width:0px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         padding-left: 5%;
         text-align: left;
     }
@@ -47,7 +47,7 @@ const HeaderUserImg = styled.img `
         width: 7.5%;
 
         //-------------------------------------------->
-        @media screen and (min-width:0px) and (max-width:768px) {
+        @media screen and(max-width:768px) {
             filter: drop-shadow(14px 14px 50px rgba(0,0,0,.5));
             width: 15%;
             max-width: 65px;
@@ -59,7 +59,7 @@ const HeaderUserName = styled.span `
     font-family: 'Lato' sans-serif;
 
     //-------------------------------------------->
-    @media screen and (min-width:0px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         font-size: 1.125rem;
         font-style: italic;
         padding-left: 5%;
