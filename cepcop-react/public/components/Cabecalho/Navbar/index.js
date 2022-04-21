@@ -14,6 +14,13 @@ const NavLista = styled.ul `
         overflow-x: auto;
     }
 `;
+const NavItem = styled.li `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: ;
+`;
 function Navbar() {
     const navItens = [
         { id: 1, nome: 'Home' },
