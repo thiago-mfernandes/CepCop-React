@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import styled from "styled-components";
-import {cinzaClaro, cinzaEscuro} from "../UI/variaveis";
+import {cinzaClaro, cinzaEscuro, azulEscuroFosco} from "../UI/variaveis";
 const userImage: string = require("./../../img/vince-fleming2.jpg") as string;
 
 const StyledHeader = styled.header`
@@ -43,15 +43,50 @@ const HeaderTitle = styled.h1`
     }
 `
 
-function Header() {
+const HeaderUserImg = styled.img`
+
+        box-shadow: 4px 4px 50px 0px rgba(0,0,0,.5);
+        clip-path: circle();
+        margin: 0 6% 0 5%;
+        width: 7.5%;
+
+        //-------------------------------------------->
+        @media screen and (min-width:0px) and (max-width:768px) {
+            filter: drop-shadow(14px 14px 50px rgba(0,0,0,.5));
+            width: 15%;
+            max-width: 65px;
+        }
+`
+
+const HeaderUserName = styled.span`
+    font-size: 1rem;
+    color: ${azulEscuroFosco};
+    font-family: 'Lato' sans-serif;
+
+    //-------------------------------------------->
+    @media screen and (min-width:0px) and (max-width:768px) {
+        font-size: 1.125rem;
+        font-style: italic;
+        padding-left: 5%;
+    }
+`
+
+function Header(props: any) {
+
+    const UserName: string = props.nome;
+
     return (
         <StyledHeader>
             <Container>
                 <HeaderInfo>
                     <HeaderTitle>Painel Administrativo</HeaderTitle>
                     <div>
-                        <p>Olá <span>fulano</span></p>
-                        <img className='header__img' src={userImage} alt="" />
+                        <p>Olá 
+                            <HeaderUserName>
+                                {UserName}
+                            </HeaderUserName>                        
+                        </p>
+                        <HeaderUserImg src={userImage} alt="Imagem do Usuário" />
                     </div>
                 </HeaderInfo>
             </Container>
