@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Cabecalho name={'Hudson'} />
+      <Cabecalho userName={'Hudson'} />
     </div>
   );
 }

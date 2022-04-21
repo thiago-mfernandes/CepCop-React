@@ -1,30 +1,32 @@
 import { azulEscuroFosco, cinzaMedio } from "src/components/UI/variaveis";
 import styled from "styled-components";
+import { MdDescription, MdGroups, MdHome, MdOutlineSettings, MdPendingActions, MdPeopleOutline, MdSchool, MdSupervisorAccount } from "react-icons/md";
+import { FaGraduationCap } from 'react-icons/fa'
 
 const NavLista = styled.ul`
   display: flex;
   flex-direction: column;
   //-------------------------------------------->
   @media screen and (max-width: 768px) {
+    border: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     height: 25vh;
-    width: 100%;
-    border: none;
+    justify-content: flex-end;
     overflow-x: auto;
+    width: 100%;
   }
 `;
 
 const NavItem = styled.li`
+  align-items: center;
+  border-bottom: 1px solid ${cinzaMedio};
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   height: 10vh;
-  width: 100%;
-  border-bottom: 1px solid ${cinzaMedio};
+  justify-content: flex-start;
   text-decoration: none;
+  width: 100%;
 
   &:first-child {
     border-top: 1px solid ${cinzaMedio};
@@ -38,8 +40,8 @@ const NavItem = styled.li`
       justify-content: space-between;
       margin-top: 0;
       position: absolute;
-      top: 5%;
       left: 0;
+      top: 5%;
       width: 100vw;
     }
   }
@@ -63,10 +65,10 @@ const NavItem = styled.li`
   //-------------------------------------------->
   @media screen and (max-width: 768px) {
     align-items: center;
-    justify-content: center;
+    border-bottom: none;
     display: flex;
     flex-direction: row;
-    border-bottom: none;
+    justify-content: center;
     margin: 0 5%;
     width: 100%;
   }
@@ -74,22 +76,23 @@ const NavItem = styled.li`
 
 function Navbar() {
   const navItens = [
-    { id: 1, nome: "Home" },
-    { id: 2, nome: "Coordenadores" },
-    { id: 3, nome: "Supervisores" },
-    { id: 4, nome: "Estagiários " },
-    { id: 5, nome: "Analisantes" },
-    { id: 6, nome: "Atendimentos" },
-    { id: 7, nome: "Turmas" },
-    { id: 8, nome: "Cursos" },
-    { id: 9, nome: "Configurações" },
+    { id: 1, icone: <MdHome />, nome: "Home" },
+    { id: 2, icone: <MdSupervisorAccount />, nome: "Coordenadores" },
+    { id: 3, icone: <MdPeopleOutline />, nome: "Supervisores" },
+    { id: 4, icone: <MdSchool />, nome: "Estagiários " },
+    { id: 5, icone: <MdDescription />, nome: "Analisantes" },
+    { id: 6, icone: <MdPendingActions />, nome: "Atendimentos" },
+    { id: 7, icone: <MdGroups />, nome: "Turmas" },
+    { id: 8, icone: <FaGraduationCap />, nome: "Cursos" },
+    { id: 9, icone: <MdOutlineSettings />, nome: "Configurações" },
   ];
-
+  
   return (
     <nav>
       <NavLista>
         {navItens.map((navitem, key) => (
           <NavItem key={key}>
+            <i>{navitem.icone}</i>
             <p>{navitem.nome}</p>
           </NavItem>
         ))}
