@@ -4,7 +4,7 @@ import TipoUsuario from "../TipoUsuario";
 
 function Adicionar() {
     return (
-        <Container>
+        <Container> {/*verificar a questao da linha depois..*/}
             <TipoUsuario nome="Coordenadores" />
             <BotaoAdicionarNovo>Adicionar</BotaoAdicionarNovo>
         </Container>

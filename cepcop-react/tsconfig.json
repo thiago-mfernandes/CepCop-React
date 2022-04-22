@@ -2,7 +2,7 @@
   "compilerOptions": {
     //(...)
     "target": "es6",
-    "lib": ["dom","dom.iterable","esnext"],
+    "lib": ["dom","dom.iterable","es6"],
     "paths": { "@/*": [".src/*"] },
     "outDir": "./public",
     "baseUrl": "./",
@@ -13,14 +13,17 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "es2015",
+    "module": "es6",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmitOnError": true,
     "jsx": "react-jsx",
     "sourceMap": true, 
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "typeRoots": [
+        "./node_modules/@types"
+      ]
   },
   "include": ["src/**/*", "custom.d.ts"]
 }
