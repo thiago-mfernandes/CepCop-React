@@ -18,7 +18,7 @@ const CardAcoes = styled.section `
         border-radius: 0;
     }
 `;
-const ContainerAcoes = styled.div `
+const SecaoAcoes = styled.div `
     background-color: rgb(231, 231, 233, 0.7);
     border-radius: 48px 48px 0 0;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
@@ -34,7 +34,7 @@ const ContainerAcoes = styled.div `
     }
 `;
 function Acoes() {
-    return (_jsx(CardAcoes, { children: _jsxs(ContainerAcoes, { children: [_jsx(Adicionar, {}), _jsx(Buscar, {})] }) }));
+    return (_jsx(CardAcoes, { children: _jsxs(SecaoAcoes, { children: [_jsx(Adicionar, {}), _jsx(Buscar, {})] }) }));
 }
 export default Acoes;
 //# sourceMappingURL=index.js.map

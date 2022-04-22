@@ -19,7 +19,7 @@ const CardAcoes = styled.section`
     }
 `;
 
-const ContainerAcoes = styled.div`
+const SecaoAcoes = styled.div`
     background-color: rgb(231, 231, 233, 0.7);
     border-radius: 48px 48px 0 0;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
@@ -38,10 +38,10 @@ const ContainerAcoes = styled.div`
 function Acoes() {
     return (
         <CardAcoes>
-            <ContainerAcoes>
+            <SecaoAcoes>
                 <Adicionar />
                 <Buscar />
-            </ContainerAcoes>
+            </SecaoAcoes>
         </CardAcoes>
     );
 }

@@ -19,7 +19,8 @@
     "isolatedModules": false,
     "noEmitOnError": true,
     "jsx": "react-jsx",
-    "sourceMap": true
+    "sourceMap": true, 
+    "noImplicitAny": true
   },
   "include": ["src/**/*", "custom.d.ts"]
 }
