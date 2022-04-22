@@ -1,14 +1,12 @@
-//import Botao from "src/components/Botao";
-import { BotaoAdicionar } from "src/components/Botao/styledButtons";
-
+import { BotaoAdicionarNovo } from "../../UI/Botao/BotaoAdicionarNovo";
 
 function Adicionar() {
     return (
         <div className="bloco-adicionarBuscar__container">
-            <BotaoAdicionar>Adicionar</BotaoAdicionar>
+            <h2 className="titulo-bloco-busca">Coordenadores</h2>
+            <BotaoAdicionarNovo>Adicionar</BotaoAdicionarNovo>
         </div>
     );
 }
 
-//<h2 className="titulo-bloco-busca">Coordenadores</h2>
 export default Adicionar;

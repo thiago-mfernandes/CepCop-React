@@ -107,7 +107,7 @@ function Navbar() {
         { id: 8, icone: _jsx(FaGraduationCap, {}), nome: "Cursos" },
         { id: 9, icone: _jsx(MdOutlineSettings, {}), nome: "Configurações" },
     ];
-    return (_jsx("nav", { children: _jsx(NavLista, { children: navItens.map((navitem, key) => (_jsxs(NavItem, { children: [_jsx(NavIcon, { children: navitem.icone }), _jsx("p", Object.assign({ className: "link-menu-nav" }, { children: navitem.nome }))] }, key))) }) }));
+    return (_jsx("nav", { children: _jsx(NavLista, { children: navItens.map((navitem, key) => (_jsxs(NavItem, { children: [_jsx(NavIcon, { children: navitem.icone }), _jsx(NavLink, { children: navitem.nome })] }, key))) }) }));
 }
 export default Navbar;
 //# sourceMappingURL=index.js.map

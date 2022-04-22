@@ -131,7 +131,7 @@ function Navbar() {
         {navItens.map((navitem, key) => (
           <NavItem key={key}>
             <NavIcon>{navitem.icone}</NavIcon>
-            <p className="link-menu-nav">{navitem.nome}</p>
+            <NavLink>{navitem.nome}</NavLink>
           </NavItem>
         ))}
       </NavLista>

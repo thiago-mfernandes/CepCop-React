@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import { azulEscuroFosco, branco } from "../UI/variaveis";
+import {
+    azulEscuroFosco,
+    branco,
+} from "../variaveis";
 
-const BotaoPadrao = styled.button`
+export const Abstract = styled.button`
     color: ${branco};
     font-size: 0.75rem;
     height: 6vh;
@@ -27,15 +30,3 @@ const BotaoPadrao = styled.button`
     }
 `;
 
-export const BotaoAdicionar = styled(BotaoPadrao)`
-    font-size: 1.25rem;
-    margin: 2.5% auto;
-    &:hover {
-        font-size: 1.5rem;
-    }
-`;
-
-export const BotaoAdicionarForm = styled(BotaoPadrao)`
-    margin-left: 0;
-    margin: 2.5% auto;
-`;

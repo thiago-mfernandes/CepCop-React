@@ -25,15 +25,11 @@ const BotaoPadrao = styled.button `
         transition: all 0.3s ease-in-out;
     }
 `;
-export const BotaoAdicionar = styled(BotaoPadrao) `
+export const BotaoAdicionarNovo = styled(BotaoPadrao) `
     font-size: 1.25rem;
     margin: 2.5% auto;
     &:hover {
         font-size: 1.5rem;
     }
-`;
-export const BotaoAdicionarForm = styled(BotaoPadrao) `
-    margin-left: 0;
-    margin: 2.5% auto;
 `;
 //# sourceMappingURL=styledButtons.js.map
