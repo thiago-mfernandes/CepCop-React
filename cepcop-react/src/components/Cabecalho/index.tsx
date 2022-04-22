@@ -77,8 +77,12 @@ const HeaderUserName = styled.span`
     }
 `;
 
-function Header(props: any) {
-    const UserName: string = props.userName;
+interface HeaderProps {
+    userName:string
+}
+
+function Header(props: HeaderProps) {
+    const UserName = props.userName;
 
     return (
         <StyledHeader>
@@ -102,4 +106,4 @@ function Header(props: any) {
     );
 }
 
-export default Header;
+export default Header

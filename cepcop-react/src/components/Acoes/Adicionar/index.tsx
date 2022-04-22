@@ -1,9 +1,10 @@
 import { BotaoAdicionarNovo } from "../../UI/Botao/BotaoAdicionarNovo";
+import TipoUsuario from "../TipoUsuario";
 
 function Adicionar() {
     return (
         <div className="bloco-adicionarBuscar__container">
-            <h2 className="titulo-bloco-busca">Coordenadores</h2>
+            <TipoUsuario nome="Coordenadores" />
             <BotaoAdicionarNovo>Adicionar</BotaoAdicionarNovo>
         </div>
     );
