@@ -1,6 +1,14 @@
 import InputPadrao  from "src/components/UI/Input/InputPadrao";
 import Container from "../Container";
-import { BotaoCadastrar } from "src/components/UI/Botao/BotaoCadastrar";
+import styled from 'styled-components';
+import {cinzaEscuro} from '../../UI/variaveis';
+
+const Conteudo = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+`;
 
 function Buscar() {
     return (
@@ -11,15 +19,14 @@ function Buscar() {
                 name=''
                 ariaDescribedby=''
             />
-            <BotaoCadastrar>oi</BotaoCadastrar>
             <Container>
-                <p className="bloco-adicionarBuscar__container___conteudo">
+                <Conteudo>
                     Mostrar
-                </p>
+                </Conteudo>
                 <div className="output-bloco-busca">10</div>
-                <p className="bloco-adicionarBuscar__container___conteudo">
+                <Conteudo>
                     entradas
-                </p>
+                </Conteudo>
             </Container>
         </>
     );

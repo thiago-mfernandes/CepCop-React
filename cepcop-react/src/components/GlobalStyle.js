@@ -24,7 +24,7 @@ body {
     transition: background-color .5s ease-in-out;
     min-height: 100vh;
 
-    @media (min-width:0px) and (max-width:768px) {
+    @media screen and (max-width:768px) {
         display: block;
         grid-template-columns: none;
         background-color: ${brancoBg};
