@@ -14,21 +14,4 @@ export const GlobalStyle = createGlobalStyle`
 	border-spacing: 0;
     list-style: none;
 }
-
-body {
-    
-    font-size: 16px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    background-color: ${cinzaClaro};
-    transition: background-color .5s ease-in-out;
-    min-height: 100vh;
-
-    @media screen and (max-width:768px) {
-        display: block;
-        grid-template-columns: none;
-        background-color: ${brancoBg};
-        transition: background-color .5s ease-in-out;  
-    }     
-}
 `

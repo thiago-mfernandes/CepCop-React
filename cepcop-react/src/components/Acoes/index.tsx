@@ -11,6 +11,7 @@ const CardAcoes = styled.section`
     box-shadow: 4px 4px 20px 0 rgb(0 0 0 / 25%);
     margin: 2.5% auto;
     overflow: auto;
+    grid-column: 2/3;
     //----------------------------------------->
     @media screen and (max-width: 768px) {
         height: 100%;
