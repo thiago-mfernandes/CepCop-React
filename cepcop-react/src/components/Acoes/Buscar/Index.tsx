@@ -1,10 +1,17 @@
+import InputPadrao  from "src/components/UI/Input/InputPadrao";
 import Container from "../Container";
-import Input from "../../UI/Input"
+import { BotaoCadastrar } from "src/components/UI/Botao/BotaoCadastrar";
 
 function Buscar() {
     return (
         <>
-            <Input type="inputPadrao" />
+            <InputPadrao
+                type='text' 
+                placeholder='Pesquise...'
+                name=''
+                ariaDescribedby=''
+            />
+            <BotaoCadastrar>oi</BotaoCadastrar>
             <Container>
                 <p className="bloco-adicionarBuscar__container___conteudo">
                     Mostrar

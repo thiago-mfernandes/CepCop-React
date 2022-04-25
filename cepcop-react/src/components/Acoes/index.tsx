@@ -1,5 +1,5 @@
 import Adicionar from "./Adicionar";
-import Buscar from "./Buscar";
+import Buscar from "./Buscar/Index";
 import styled from "styled-components";
 import { brancoBg } from "../UI/variaveis";
 
