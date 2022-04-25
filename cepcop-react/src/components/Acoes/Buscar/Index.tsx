@@ -2,6 +2,7 @@ import InputPadrao  from "src/components/UI/Input/InputPadrao";
 import Container from "../Container";
 import styled from 'styled-components';
 import {cinzaEscuro} from '../../UI/variaveis';
+import Output from "src/components/UI/Output/Index";
 
 const Conteudo = styled.p`
     color: ${cinzaEscuro};
@@ -23,7 +24,7 @@ function Buscar() {
                 <Conteudo>
                     Mostrar
                 </Conteudo>
-                <div className="output-bloco-busca">10</div>
+                <Output valor={10} /> {/*mockar o dado aqui*/}
                 <Conteudo>
                     entradas
                 </Conteudo>
