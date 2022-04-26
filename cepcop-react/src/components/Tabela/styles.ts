@@ -35,13 +35,13 @@ export const StyledTabelaHeader = styled.thead`
     }
 `;
 
-export const StyledTabelaRow = styled.tr`
+export const StyledTabelaHeaderTr = styled.tr`
     color: ${brancoBg};
     font-size: 0.75rem;
     background-color: rgba(18, 18, 224, 0.7);
     text-align: center;
     &___tr:nth-of-type(even) {
-        color: $cinza-escuro;
+        color: ${cinzaEscuro};
     }
 
     //--------------------------------------------------->
@@ -49,6 +49,12 @@ export const StyledTabelaRow = styled.tr`
         display: block;
         width: 100%;
     }
+`;
+
+export const StyledTabelaRow = styled.th`
+    font-family: "Fjalla One", sans-serif;
+    padding: 0.25%;
+    vertical-align: middle;
 `;
 
 export const StyledTabelaRowTh = styled.th`

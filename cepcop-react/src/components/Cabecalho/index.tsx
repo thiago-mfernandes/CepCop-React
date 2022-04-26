@@ -81,7 +81,7 @@ interface HeaderProps {
     userName:string
 }
 
-function Header(props: HeaderProps) {
+function Header(props: HeaderProps):JSX.Element {
     const UserName = props.userName;
 
     return (

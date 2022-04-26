@@ -1,9 +1,12 @@
 import { StyledTabelaContainer } from "./styles";
+import IChildProp from "../Interfaces/IChildProp";
 
-const Tabela: React.FC = ():JSX.Element => (
+const TabelaContainer: React.FC<IChildProp> = ({
+    children
+}:IChildProp):JSX.Element => (
     <StyledTabelaContainer>
-
+        {children}
     </StyledTabelaContainer>
 )
 
-export default Tabela;
+export default TabelaContainer;
