@@ -20,7 +20,7 @@ function Buscar() {
                 name=''
                 ariaDescribedby=''
             />
-            <Container>
+            <Container borderBottom=''>
                 <Conteudo>
                     Mostrar
                 </Conteudo>

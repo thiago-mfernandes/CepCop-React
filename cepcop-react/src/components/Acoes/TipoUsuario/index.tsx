@@ -6,6 +6,7 @@ const UserType = styled.h2`
     font-size: 1.75rem;
     font-family: 'Fjalla One' sans-serif;
     padding-left: 5%;
+    border-bottom: 5%;
 
     //---------------------------------------------->
     @media screen and (max-width: 768px) {
