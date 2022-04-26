@@ -6,7 +6,7 @@ const InputAlterar: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps):JSX.Element => (
     <StyledInputAlterar
         type={type}
         placeholder={placeholder}

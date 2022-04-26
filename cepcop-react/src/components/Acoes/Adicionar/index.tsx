@@ -4,7 +4,9 @@ import TipoUsuario from "../TipoUsuario";
 
 function Adicionar() {
     return (
-        <Container borderBottom='1px solid #c4c4c4'> {/*verificar a questao da linha depois..*/}
+        <Container 
+            borderBottom='1px solid #c4c4c4' 
+            paddingBottom='2.5%'>
             <TipoUsuario nome="Coordenadores" />
             <BotaoAdicionarNovo>Adicionar</BotaoAdicionarNovo>
         </Container>

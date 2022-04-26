@@ -11,7 +11,7 @@ export const Container = styled.input`
     border: none;
     border-radius: 24px;
     padding-left: 5%;
-    margin: 1.5% 0 0 5%;
+    margin: 1.5% 0 1.5% 5%;
     &:focus {
         border: 1px solid ${azulEscuroFosco};
         outline: none;

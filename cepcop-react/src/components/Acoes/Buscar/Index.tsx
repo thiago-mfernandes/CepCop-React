@@ -9,6 +9,7 @@ const Conteudo = styled.p`
     font-size: 1rem;
     font-style: italic;
     font-weight: lighter;
+    margin-left: 5%;
 `;
 
 function Buscar() {
@@ -20,7 +21,7 @@ function Buscar() {
                 name=''
                 ariaDescribedby=''
             />
-            <Container borderBottom=''>
+            <Container borderBottom='0px' paddingBottom={'0px'}>
                 <Conteudo>
                     Mostrar
                 </Conteudo>

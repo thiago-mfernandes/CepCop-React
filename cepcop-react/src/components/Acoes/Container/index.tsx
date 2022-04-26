@@ -5,6 +5,7 @@ import styled from "styled-components";
 export interface ContainerProps {
     children: any;
     borderBottom: string;
+    paddingBottom: string;
 }
 
 const ContainerBox = styled.div<ContainerProps>`
@@ -12,8 +13,7 @@ const ContainerBox = styled.div<ContainerProps>`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 2.5%;
-    padding-bottom: 2.5%;
+    padding-bottom: ${(props) => props.paddingBottom};
     border-bottom: ${(props) => props.borderBottom};
     
     //---------------------------------------------------------->
@@ -24,9 +24,12 @@ const ContainerBox = styled.div<ContainerProps>`
 
 const Container: React.FC<ContainerProps> = ({ 
     children,
-    borderBottom
+    borderBottom, 
+    paddingBottom
  }) => (
-    <ContainerBox borderBottom={borderBottom}>
+    <ContainerBox 
+        borderBottom={borderBottom}
+        paddingBottom={paddingBottom}>
         { children }
     </ContainerBox>
 );

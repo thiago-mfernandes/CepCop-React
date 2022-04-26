@@ -6,7 +6,7 @@ const InputRadio: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps) => (
     <StyledInputRadio
         type={type}
         placeholder={placeholder}

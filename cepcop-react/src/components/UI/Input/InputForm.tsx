@@ -7,7 +7,7 @@ const InputForm: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps):JSX.Element  => (
     <StyledInputForm
         type={type}
         placeholder={placeholder}

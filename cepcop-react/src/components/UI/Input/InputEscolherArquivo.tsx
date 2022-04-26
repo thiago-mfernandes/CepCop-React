@@ -6,7 +6,7 @@ const InputEscolherArquivo: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps):JSX.Element  => (
     <StyledInputEscolherArquivo
         type={type}
         placeholder={placeholder}

@@ -12,7 +12,7 @@ const InputPadrao: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps):JSX.Element  => (
     <Container
         type={type}
         placeholder={placeholder}

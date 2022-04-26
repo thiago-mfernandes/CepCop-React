@@ -6,7 +6,7 @@ const InputLogin: React.FC<InputProps> = ({
     placeholder,
     name,
     ariaDescribedby,
-}) => (
+}:InputProps):JSX.Element  => (
     <StyledInputLogin
         type={type}
         placeholder={placeholder}
