@@ -1,13 +1,11 @@
-import { StyledFooterInfo } from "./styles";
+import { StyledFooter } from "./styles";
+import IChildProp from '../Interfaces/IChildProp';
 
-interface IFooterProps {
-    children: React.ReactNode;
-}
 
-const Footer: React.FC<IFooterProps> = ({
+const Footer: React.FC<IChildProp> = ({
     children,
-}: IFooterProps): JSX.Element => (
-    <StyledFooterInfo>{children}</StyledFooterInfo>
+}: IChildProp): JSX.Element => (
+    <StyledFooter>{children}</StyledFooter>
 );
 
 export default Footer;

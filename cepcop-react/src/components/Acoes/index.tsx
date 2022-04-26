@@ -2,6 +2,7 @@ import Adicionar from "./Adicionar";
 import Buscar from "./Buscar/Index";
 import styled from "styled-components";
 import { brancoBg } from "../UI/variaveis";
+import Rodape from "../Rodape";
 
 const CardAcoes = styled.section`
     height: 85%;
@@ -37,12 +38,16 @@ const SecaoAcoes = styled.div`
 
 function Acoes() {
     return (
-        <CardAcoes>
-            <SecaoAcoes>
-                <Adicionar />
-                <Buscar />
-            </SecaoAcoes>
-        </CardAcoes>
+        <main>
+            <CardAcoes>
+                <SecaoAcoes>
+                    <Adicionar />
+                    <Buscar />
+                </SecaoAcoes>
+                {/* tabela aqui */}
+            </CardAcoes>
+            <Rodape />
+        </main>
     );
 }
 
