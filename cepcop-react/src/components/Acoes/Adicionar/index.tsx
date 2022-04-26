@@ -1,4 +1,3 @@
-import Linha from "src/components/UI/Linha";
 import { BotaoAdicionarNovo } from "../../UI/Botao/BotaoAdicionarNovo";
 import Container from "../Container";
 import TipoUsuario from "../TipoUsuario";
