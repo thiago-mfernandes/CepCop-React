@@ -1,18 +1,24 @@
-import './App.css';
-import Cabecalho from './components/Cabecalho';
-import { GlobalStyle } from './components/GlobalStyle';
-import Acoes from './components/Acoes/';
+import "./App.css";
+// import Cabecalho from "./components/Cabecalho";
+// import { GlobalStyle } from "./components/GlobalStyle";
+// import Acoes from "./components/Acoes/";
 
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from './routes';
 //mockar o dado do usuario
 
 function App() {
-  return (
-    <div className="App">
-      <GlobalStyle />
-      <Cabecalho userName={'Hudson'} />
-      <Acoes />
-    </div>
-  );
+    return (
+        <Router>
+            <Routes />
+        </Router>
+    );
 }
 
 export default App;
+
+// <div className="App">
+//   <GlobalStyle />
+//   <Cabecalho userName={'Hudson'} />
+//   <Acoes />
+// </div>
