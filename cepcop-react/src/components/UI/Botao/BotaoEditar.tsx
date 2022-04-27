@@ -7,7 +7,7 @@ const StyledBotaoEditar = styled.i`
     color: ${verdePadrao};
     font-size: 1.25rem;
     cursor: pointer;
-
+    padding-right: 2.5%;
     //---------------------------------------------->
     @media screen and (max-width: 768px) {
         font-size: 1;
@@ -15,9 +15,9 @@ const StyledBotaoEditar = styled.i`
     }
 `;
 
-function BotaoEditar(id: string, children: React.ReactNode): JSX.Element {
+function BotaoEditar(id: any) {
     return (
-        <StyledBotaoEditar>
+        <StyledBotaoEditar id={id}>
             <MdModeEdit />
         </StyledBotaoEditar>
     );

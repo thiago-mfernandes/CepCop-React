@@ -6,7 +6,7 @@ export const StyledBotaoDeletar = styled.i`
     color: ${vermelhoPadrao};
     font-size: 1.25rem;
     cursor: pointer;
-
+    padding-left: 2.5%;
     //---------------------------------------------->
     @media screen and (max-width: 768px) {
         font-size: 1.5rem;
@@ -14,9 +14,9 @@ export const StyledBotaoDeletar = styled.i`
     }
 `;
 
-function BotaoDeletar(id: string, children: React.ReactNode): JSX.Element {
+function BotaoDeletar(id: any): JSX.Element {
     return (
-        <StyledBotaoDeletar>
+        <StyledBotaoDeletar id={id}>
             <MdDelete />
         </StyledBotaoDeletar>
     );

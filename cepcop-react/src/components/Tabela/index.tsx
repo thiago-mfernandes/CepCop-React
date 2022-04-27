@@ -5,6 +5,8 @@ import THeadTh from "../Tabela/THead/THeadTh";
 import TBody from "../Tabela/TBody/TBody";
 import TBodyTr from "../Tabela/TBody/TBodyTr";
 import TBodyTd from "../Tabela/TBody/TBodyTd"
+import BotaoEditar from "../UI/Botao/BotaoEditar";
+import BotaoDeletar from "../UI/Botao/BotaoDeletar";
 
 function Tabela() {
     return (
@@ -24,48 +26,18 @@ function Tabela() {
                 </THead>
                 <TBody>
                     <TBodyTr>
-                        <TBodyTd dataLabel={"Nome"}>{"Hudson Bonomo"}</TBodyTd>
-                        <TBodyTd dataLabel={"Email"}>{"hudson@gmail.com"}</TBodyTd>
+                        <TBodyTd dataLabel="Nome">Hudson Bonomo</TBodyTd>
+                        <TBodyTd dataLabel="Email">hudson@gmail.com</TBodyTd>
                         
-                        <TBodyTd dataLabel={"CPF"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Celular"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Curso"}>{"Clínica Psicanalítica Freud-Lacan"}</TBodyTd>
-                        <TBodyTd dataLabel={"Permissoes"}>{"Gerenciar Superviores: SIM"}</TBodyTd>
-                        <TBodyTd dataLabel={"Data do Cadastro"}>{"01/01/2022"}</TBodyTd>
-                        <TBodyTd dataLabel={"Acao"}>{"Excluir ou Deletar"}</TBodyTd>
-                    </TBodyTr>
-                    <TBodyTr>
-                        <TBodyTd dataLabel={"Nome"}>{"Hudson Bonomo"}</TBodyTd>
-                        <TBodyTd dataLabel={"Email"}>{"hudson@gmail.com"}</TBodyTd>
-                        
-                        <TBodyTd dataLabel={"CPF"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Celular"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Curso"}>{"Clínica Psicanalítica Freud-Lacan"}</TBodyTd>
-                        <TBodyTd dataLabel={"Permissoes"}>{"Gerenciar Superviores: SIM"}</TBodyTd>
-                        <TBodyTd dataLabel={"Data do Cadastro"}>{"01/01/2022"}</TBodyTd>
-                        <TBodyTd dataLabel={"Acao"}>{"Excluir ou Deletar"}</TBodyTd>
-                    </TBodyTr>
-                    <TBodyTr>
-                        <TBodyTd dataLabel={"Nome"}>{"Hudson Bonomo"}</TBodyTd>
-                        <TBodyTd dataLabel={"Email"}>{"hudson@gmail.com"}</TBodyTd>
-                        
-                        <TBodyTd dataLabel={"CPF"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Celular"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Curso"}>{"Clínica Psicanalítica Freud-Lacan"}</TBodyTd>
-                        <TBodyTd dataLabel={"Permissoes"}>{"Gerenciar Superviores: SIM"}</TBodyTd>
-                        <TBodyTd dataLabel={"Data do Cadastro"}>{"01/01/2022"}</TBodyTd>
-                        <TBodyTd dataLabel={"Acao"}>{"Excluir ou Deletar"}</TBodyTd>
-                    </TBodyTr>
-                    <TBodyTr>
-                        <TBodyTd dataLabel={"Nome"}>{"Hudson Bonomo"}</TBodyTd>
-                        <TBodyTd dataLabel={"Email"}>{"hudson@gmail.com"}</TBodyTd>
-                        
-                        <TBodyTd dataLabel={"CPF"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Celular"}>{"000.111.222-33"}</TBodyTd>
-                        <TBodyTd dataLabel={"Curso"}>{"Clínica Psicanalítica Freud-Lacan"}</TBodyTd>
-                        <TBodyTd dataLabel={"Permissoes"}>{"Gerenciar Superviores: SIM"}</TBodyTd>
-                        <TBodyTd dataLabel={"Data do Cadastro"}>{"01/01/2022"}</TBodyTd>
-                        <TBodyTd dataLabel={"Acao"}>{"Excluir ou Deletar"}</TBodyTd>
+                        <TBodyTd dataLabel="CPF">000.111.222-33</TBodyTd>
+                        <TBodyTd dataLabel="Celular">000.111.222-33</TBodyTd>
+                        <TBodyTd dataLabel="Curso">Clínica Psicanalítica Freud-Lacan"</TBodyTd>
+                        <TBodyTd dataLabel="Permissoes">Gerenciar Superviores: SIM"</TBodyTd>
+                        <TBodyTd dataLabel="Data do Cadastro">01/01/2022</TBodyTd>
+                        <TBodyTd dataLabel="Acao">
+                            <BotaoEditar/>
+                            <BotaoDeletar id="y"/>
+                        </TBodyTd>
                     </TBodyTr>
                 </TBody>
             </Table>
