@@ -88,7 +88,7 @@ export const NavIcon = styled.i`
     }
 `;
   
-export const NavLink = styled.p`
+export const NavLink = styled.a`
     color: ${cinzaEscuro};
     font-size: 1rem;
     font-family: "Lato", sans-serif;

@@ -1,5 +1,6 @@
 import {
     MdDescription,
+    MdExitToApp,
     MdGroups,
     MdHome,
     MdOutlineSettings,
@@ -23,6 +24,7 @@ function Navbar() {
         { id: 7, icone: <MdGroups />, nome: "Turmas" },
         { id: 8, icone: <FaGraduationCap />, nome: "Cursos" },
         { id: 9, icone: <MdOutlineSettings />, nome: "Configurações" },
+        { id: 10, icone: <MdExitToApp />, nome: "Sair" }
     ];
 
     return (
