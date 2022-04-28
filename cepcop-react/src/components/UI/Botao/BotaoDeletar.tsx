@@ -14,9 +14,9 @@ export const StyledBotaoDeletar = styled.i`
     }
 `;
 
-function BotaoDeletar(id: any): JSX.Element {
+function BotaoDeletar(props: { id?: string }) {
     return (
-        <StyledBotaoDeletar id={id}>
+        <StyledBotaoDeletar id={props.id}>
             <MdDelete />
         </StyledBotaoDeletar>
     );

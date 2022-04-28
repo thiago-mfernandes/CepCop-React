@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Abstract } from './Absctrat';
+import { Abstract } from "./Absctrat";
 
 export const BotaoAlterarOrdem = styled(Abstract)`
     margin-left: 5%;

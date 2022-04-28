@@ -1,10 +1,8 @@
 import { StyledThead } from "../styles";
 import IChildProp from "../../Interfaces/IChildProp";
 
-const THead: React.FC<IChildProp> = ({
-    children
-}:IChildProp): JSX.Element => (
-    <StyledThead>{children}</StyledThead>
-);
+function THead(props: IChildProp) {
+    return <StyledThead>{props.children}</StyledThead>;
+}
 
 export default THead;

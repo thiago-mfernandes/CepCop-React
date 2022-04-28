@@ -84,13 +84,13 @@ export const StyledTBodyTr = styled.tr`
 
 export const StyledTBodyTd = styled.td`
     border-right: 1px solid ${cinzaMedio};
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding: 0.75%;
     text-align: center;
     vertical-align: middle;
-    
+
     //botoes de ação editar e deletar;
-    &:last-of-type{
+    &:last-of-type {
         border-right: none;
         margin: auto 0;
         text-align: center;
@@ -99,8 +99,8 @@ export const StyledTBodyTd = styled.td`
 
     @media screen and (max-width: 768px) {
         display: block;
-        width: 100%;   
-        //esses 30% protege o texto de fazer sobreposição no data-label   
+        width: 100%;
+        //esses 30% protege o texto de fazer sobreposição no data-label
         padding: 5% 5% 5% 30%;
         text-align: right;
         position: relative;
@@ -113,7 +113,7 @@ export const StyledTBodyTd = styled.td`
             left: 0;
             width: 50%;
             padding-left: 15px;
-            font-size: .75rem;
+            font-size: 0.75rem;
             font-weight: bold;
             text-align: left;
             vertical-align: middle;

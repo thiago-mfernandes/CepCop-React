@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import {
-    azulEscuroFosco,
-    branco,
-} from "../variaveis";
+import { azulEscuroFosco, branco } from "../variaveis";
 
 export const Abstract = styled.button`
     color: ${branco};
@@ -29,4 +26,3 @@ export const Abstract = styled.button`
         transition: all 0.3s ease-in-out;
     }
 `;
-

@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import {
-    vermelhoPadrao,
-    branco,
-} from "../variaveis";
-import { Abstract } from './Absctrat';
+import { vermelhoPadrao, branco } from "../variaveis";
+import { Abstract } from "./Absctrat";
 
 export const BotaoCancelar = styled(Abstract)`
     color: ${branco};

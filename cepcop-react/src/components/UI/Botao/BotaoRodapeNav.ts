@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import {
-    branco,
-} from "../variaveis";
+import { branco } from "../variaveis";
 
 export const BotaoRodapeNav = styled.div`
     display: flex;

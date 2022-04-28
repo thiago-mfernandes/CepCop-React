@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import {
-    azulEscuroFosco,
-    branco,
-} from "../variaveis";
-import { Abstract } from './Absctrat';
+import { azulEscuroFosco, branco } from "../variaveis";
+import { Abstract } from "./Absctrat";
 
 export const BotaoAdicionarNovo = styled(Abstract)`
     height: 6vh;

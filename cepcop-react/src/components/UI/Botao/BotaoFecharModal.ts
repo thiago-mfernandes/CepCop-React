@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import {
-    brancoBg,
-    cinzaEscuro,
-} from "../variaveis";
+import { brancoBg, cinzaEscuro } from "../variaveis";
 
 export const BotaoFecharModal = styled.div`
     color: ${brancoBg};

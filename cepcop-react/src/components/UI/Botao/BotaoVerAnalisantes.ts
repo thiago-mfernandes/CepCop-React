@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-    brancoBg,
-} from "../variaveis";
-import { Abstract } from './Absctrat';
+import { brancoBg } from "../variaveis";
+import { Abstract } from "./Absctrat";
 
 export const BotaoVerAnalisantes = styled(Abstract)`
     height: 5vh;

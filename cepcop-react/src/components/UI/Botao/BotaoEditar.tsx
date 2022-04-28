@@ -1,4 +1,3 @@
-import React from "react";
 import { MdModeEdit } from "react-icons/md";
 import styled from "styled-components";
 import { verdePadrao } from "../variaveis";
@@ -15,9 +14,9 @@ const StyledBotaoEditar = styled.i`
     }
 `;
 
-function BotaoEditar(id: any) {
+function BotaoEditar(props: { id?: string }) {
     return (
-        <StyledBotaoEditar id={id}>
+        <StyledBotaoEditar id={props.id}>
             <MdModeEdit />
         </StyledBotaoEditar>
     );

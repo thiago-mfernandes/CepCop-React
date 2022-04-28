@@ -1,12 +1,8 @@
 import { StyledTable } from "./styles";
 import IChildProp from "../Interfaces/IChildProp";
 
-const Table: React.FC<IChildProp> = ({
-    children
-}:IChildProp):JSX.Element => (
-    <StyledTable>
-        {children}
-    </StyledTable>
-)
+function Table(props: IChildProp) {
+    return <StyledTable>{props.children}</StyledTable>;
+}
 
 export default Table;

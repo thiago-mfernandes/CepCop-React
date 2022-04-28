@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-    azulEscuroFosco,
-} from "../variaveis";
-import { Abstract } from './Absctrat';
+import { azulEscuroFosco } from "../variaveis";
+import { Abstract } from "./Absctrat";
 
 export const BotaoSalvarConfiguracoes = styled(Abstract)`
     margin-left: 0;
