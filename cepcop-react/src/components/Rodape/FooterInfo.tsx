@@ -1,13 +1,7 @@
 import { StyledFooterInfo } from "./styles";
 
-interface IFooterInfo {
-    texto: string;
+function FooterInfo(texto: string) {
+    return <StyledFooterInfo>{texto}</StyledFooterInfo>;
 }
-
-const FooterInfo: React.FC<IFooterInfo> = ({
-    texto,
-}: IFooterInfo): JSX.Element => (
-    <StyledFooterInfo>{texto}</StyledFooterInfo>
-);
 
 export default FooterInfo;

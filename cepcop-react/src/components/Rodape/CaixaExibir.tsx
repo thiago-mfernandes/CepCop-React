@@ -1,10 +1,7 @@
 import { StyledFooterCaixaExibir } from "./styles";
 import IChildProp from "../Interfaces/IChildProp";
 
-const CaixaExibir: React.FC<IChildProp> = ({
-    children,
-}: IChildProp): JSX.Element => (
-    <StyledFooterCaixaExibir>{children}</StyledFooterCaixaExibir>
-);
-
+function CaixaExibir(props: IChildProp) {
+    return <StyledFooterCaixaExibir>{props.children}</StyledFooterCaixaExibir>;
+}
 export default CaixaExibir;

@@ -1,10 +1,8 @@
 import { StyledFooterContainer } from "./styles";
-import IChildProp from '../Interfaces/IChildProp';
+import IChildProp from "../Interfaces/IChildProp";
 
-const FooterContainer: React.FC<IChildProp> = ({
-    children
-}:IChildProp):JSX.Element => (
-    <StyledFooterContainer>{children}</StyledFooterContainer>
-);
+function FooterContainer(props: IChildProp) {
+    return <StyledFooterContainer>{props.children}</StyledFooterContainer>;
+}
 
 export default FooterContainer;
