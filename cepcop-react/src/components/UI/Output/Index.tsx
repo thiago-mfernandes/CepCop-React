@@ -1,11 +1,8 @@
 import { Container } from "./styles";
 
-interface OutputPros {
-    valor: number;
-}
 
-const Output: React.FC<OutputPros> = ({ valor }) => (
-    <Container>{valor}</Container>
-);
+function Output(props: { valor: number }) {
+    return <Container>{props.valor}</Container>;
+}
 
 export default Output;

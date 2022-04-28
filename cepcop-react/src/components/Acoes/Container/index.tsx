@@ -4,7 +4,7 @@ export interface ContainerProps {
     children: any;
     borderBottom: string;
     paddingBottom: string;
-    justifyContentDireita?: boolean;
+    justifyContentDireita?: true | false;
 }
 
 const ContainerBox = styled.div<ContainerProps>`
@@ -16,10 +16,10 @@ const ContainerBox = styled.div<ContainerProps>`
     padding-bottom: ${(props) => props.paddingBottom};
     border-bottom: ${(props) => props.borderBottom};
     ${(props) =>
-        (props.justifyContentDireita &&
+        props.justifyContentDireita &&
         css`
             margin-right: 5%;
-        `)};
+        `};
     //------------------------------------->
     @media screen and (max-width: 768px) {
         justify-content: space-between;
@@ -42,3 +42,5 @@ const Container: React.FC<ContainerProps> = ({
 );
 
 export default Container;
+
+
