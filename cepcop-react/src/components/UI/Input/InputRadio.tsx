@@ -1,18 +1,20 @@
 import { StyledInputRadio } from "./styles";
-import { InputProps } from "./InputPadrao";
+//import { InputProps } from "./InputPadrao";
 
-const InputRadio: React.FC<InputProps> = ({
-    type,
-    placeholder,
-    name,
-    ariaDescribedby,
-}:InputProps) => (
-    <StyledInputRadio
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        aria-describedby={ariaDescribedby}
-    ></StyledInputRadio>
-);
+function InputRadio(props: {
+    type: string;
+    placeholder?: string;
+    name?: string;
+    ariaDescribedby?: string;
+}) {
+    return (
+        <StyledInputRadio
+            type={props.type}
+            placeholder={props.placeholder}
+            name={props.name}
+            aria-describedby={props.ariaDescribedby}
+        />
+    );
+}
 
 export default InputRadio;
