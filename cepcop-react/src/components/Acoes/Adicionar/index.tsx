@@ -4,9 +4,7 @@ import TipoUsuario from "../TipoUsuario";
 
 function Adicionar() {
     return (
-        <Container 
-            borderBottom='1px solid #c4c4c4' 
-            paddingBottom='2.5%'>
+        <Container borderBottom="1px solid #c4c4c4" paddingBottom="2.5%">
             <TipoUsuario nome="Coordenadores" />
             <BotaoAdicionarNovo>Adicionar</BotaoAdicionarNovo>
         </Container>
@@ -14,4 +12,3 @@ function Adicionar() {
 }
 
 export default Adicionar;
-
