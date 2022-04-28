@@ -1,18 +1,14 @@
+import IInputProps from "src/components/Interfaces/IInputProps";
 import { StyledInputAlterar } from "./styles";
-import { InputProps } from "./InputPadrao";
 
-const InputAlterar: React.FC<InputProps> = ({
-    type,
-    placeholder,
-    name,
-    ariaDescribedby,
-}:InputProps):JSX.Element => (
-    <StyledInputAlterar
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        aria-describedby={ariaDescribedby}
-    ></StyledInputAlterar>
-);
-
+function InputAlterar(props: IInputProps) {
+    return (
+        <StyledInputAlterar
+            type={props.type}
+            placeholder={props.placeholder}
+            name={props.name}
+            aria-describedby={props.ariaDescribedby}
+        ></StyledInputAlterar>
+    );
+}
 export default InputAlterar;

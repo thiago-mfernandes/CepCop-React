@@ -1,18 +1,15 @@
+import IInputProps from "src/components/Interfaces/IInputProps";
 import { StyledInputLogin } from "./styles";
-import { InputProps } from "./InputPadrao";
 
-const InputLogin: React.FC<InputProps> = ({
-    type,
-    placeholder,
-    name,
-    ariaDescribedby,
-}:InputProps):JSX.Element  => (
-    <StyledInputLogin
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        aria-describedby={ariaDescribedby}
-    ></StyledInputLogin>
-);
+function InputLogin(props: IInputProps) {
+    return (
+        <StyledInputLogin
+            type={props.type}
+            placeholder={props.placeholder}
+            name={props.name}
+            aria-describedby={props.ariaDescribedby}
+        ></StyledInputLogin>
+    );
+}
 
 export default InputLogin;

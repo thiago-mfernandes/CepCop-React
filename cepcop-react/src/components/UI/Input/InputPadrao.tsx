@@ -1,24 +1,15 @@
 import { Container } from "./styles";
+import IInputProps from "src/components/Interfaces/IInputProps";
 
-export interface InputProps {
-    type: string;
-    placeholder: string;
-    name: string;
-    ariaDescribedby: string;
+function InputPadrao(props: IInputProps) {
+    return (
+        <Container
+            type={props.type}
+            placeholder={props.placeholder}
+            name={props.name}
+            aria-describedby={props.ariaDescribedby}
+        />
+    );
 }
-
-const InputPadrao: React.FC<InputProps> = ({
-    type,
-    placeholder,
-    name,
-    ariaDescribedby,
-}:InputProps):JSX.Element  => (
-    <Container
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        aria-describedby={ariaDescribedby}
-    ></Container>
-);
 
 export default InputPadrao;

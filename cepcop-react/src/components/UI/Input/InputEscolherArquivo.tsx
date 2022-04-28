@@ -1,18 +1,15 @@
+import IInputProps from "src/components/Interfaces/IInputProps";
 import { StyledInputEscolherArquivo } from "./styles";
-import { InputProps } from "./InputPadrao";
 
-const InputEscolherArquivo: React.FC<InputProps> = ({
-    type,
-    placeholder,
-    name,
-    ariaDescribedby,
-}:InputProps):JSX.Element  => (
-    <StyledInputEscolherArquivo
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        aria-describedby={ariaDescribedby}
-    ></StyledInputEscolherArquivo>
-);
+function InputEscolherArquivo(props: IInputProps) {
+    return (
+        <StyledInputEscolherArquivo
+            type={props.type}
+            placeholder={props.placeholder}
+            name={props.name}
+            aria-describedby={props.ariaDescribedby}
+        ></StyledInputEscolherArquivo>
+    );
+}
 
 export default InputEscolherArquivo;

@@ -1,12 +1,7 @@
 import { StyledInputRadio } from "./styles";
-//import { InputProps } from "./InputPadrao";
+import IInputProps from "src/components/Interfaces/IInputProps";
 
-function InputRadio(props: {
-    type: string;
-    placeholder?: string;
-    name?: string;
-    ariaDescribedby?: string;
-}) {
+function InputRadio(props: IInputProps) {
     return (
         <StyledInputRadio
             type={props.type}
