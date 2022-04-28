@@ -11,7 +11,7 @@ import {
 
 const userImage: string = require("./../../img/vince-fleming2.jpg") as string;
 
-function Header(userName: string) {
+function Header(props: {userName: string}) {
     return (
         <StyledHeader>
             <Container>
@@ -20,7 +20,7 @@ function Header(userName: string) {
                     <HeaderBox>
                         <p>
                             Olá,
-                            <HeaderUserName> {userName}!</HeaderUserName>
+                            <HeaderUserName> {props.userName}!</HeaderUserName>
                         </p>
                         <HeaderUserImg
                             src={userImage}
