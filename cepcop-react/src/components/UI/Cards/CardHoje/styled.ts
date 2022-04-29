@@ -107,3 +107,16 @@ export const StyledData = styled.p`
         padding: 2.5% 0;
     }
 `;
+
+export const StyledDiaSemana = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5% 0% 10%;
+
+    //--------------------------------------------->
+    @media screen and (max-width: 768px) {
+        padding: 5% 0 0;
+    }
+`;

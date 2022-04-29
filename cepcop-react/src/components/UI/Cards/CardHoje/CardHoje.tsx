@@ -1,6 +1,7 @@
 import ContainerData from "./ContainerData";
 import ContainerInfo from "./ContainerInfo";
 import Data from "./Data";
+import DiaSemana from "./DiaSemana";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "./TituloCardHoje";
 
@@ -17,7 +18,7 @@ function CardHoje() {
                 <ContainerData>
                     
                     <Data dataHoje={`${dataHoje}`}/>{/* tratar o dado aqui */}
-                    <p className="card-cadHoje__diaSemana">Sexta-feira</p>
+                    <DiaSemana dia="Sexta"/>{/* tratar o dado aqui */}
                 </ContainerData>
                    <div className="card-cadHoje__containerTotal">
                        <p className="card-cadHoje__totalCadastros">21</p>
