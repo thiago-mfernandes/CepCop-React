@@ -1,4 +1,3 @@
-import Acoes from "src/components/Acoes";
 import Cabecalho from "src/components/Cabecalho";
 import { GlobalStyle } from "src/components/GlobalStyle";
 import HomeCard from "src/components/UI/Cards/CardHome";
