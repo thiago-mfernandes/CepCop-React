@@ -1,7 +1,7 @@
 import { StyledFooterInfo } from "./styles";
 
-function FooterInfo(texto: string) {
-    return <StyledFooterInfo>{texto}</StyledFooterInfo>;
+function FooterInfo(props: {texto: string}) {
+    return <StyledFooterInfo>{props.texto}</StyledFooterInfo>;
 }
 
 export default FooterInfo;
