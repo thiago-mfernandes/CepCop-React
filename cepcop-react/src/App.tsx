@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Analisantes from "./pages/analisantes";
 import Atendimentos from "./pages/atendimentos";
 import Coordenadores from "./pages/coordenadores";
@@ -16,14 +16,14 @@ function App() {
         <>
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/coordenadores" element={<Coordenadores />} />
-                <Route path="/supervisores" element={<Supervisores />} />
-                <Route path="/estagiarios" element={<Estagiarios />} />
-                <Route path="/analisantes" element={<Analisantes />} />
-                <Route path="/atendimentos" element={<Atendimentos />} />
-                <Route path="/cursos" element={<Cursos />} />
-                <Route path="/turmas" element={<Turmas />} />
-                <Route path="/configuracoes" element={<Configuracoes />} />
+                <Route path="coordenadores" element={<Coordenadores />} />
+                <Route path="supervisores" element={<Supervisores />} />
+                <Route path="estagiarios" element={<Estagiarios />} />
+                <Route path="analisantes" element={<Analisantes />} />
+                <Route path="atendimentos" element={<Atendimentos />} />
+                <Route path="cursos" element={<Cursos />} />
+                <Route path="turmas" element={<Turmas />} />
+                <Route path="configuracoes" element={<Configuracoes />} />
             </Routes>
         </>
     );

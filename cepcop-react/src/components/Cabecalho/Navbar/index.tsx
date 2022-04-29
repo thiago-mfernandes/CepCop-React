@@ -11,8 +11,8 @@ import {
 } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";
 
-import { NavLista, NavItem, NavIcon, NavLink } from "./styledComponents";
-import { Link } from "react-router-dom";
+import { NavLista, NavItem, NavIcon } from "./styledComponents";
+import CustomLink from "./customLink";
 
 function Navbar() {
     const navItens = [
@@ -21,50 +21,59 @@ function Navbar() {
             id: 2,
             icone: <MdSupervisorAccount />,
             nome: "Coordenadores",
+            rota: "/coordenadores",
         },
         {
             id: 3,
             icone: <MdPeopleOutline />,
             nome: "Supervisores",
+            rota: "/supervisores",
         },
         {
             id: 4,
             icone: <MdSchool />,
             nome: "Estagiários ",
+            rota: "/estagiarios",
         },
         {
             id: 5,
             icone: <MdDescription />,
             nome: "Analisantes",
+            rota: "/analisantes",
         },
         {
             id: 6,
             icone: <MdPendingActions />,
             nome: "Atendimentos",
+            rota: "/atendimentos",
         },
-        { id: 7, icone: <MdGroups />, nome: "Turmas", rota: "/Turmas" },
-        { id: 8, icone: <FaGraduationCap />, nome: "Cursos", rota: "/Cursos" },
+        { id: 7, icone: <MdGroups />, nome: "Turmas", rota: "/turmas" },
+        { id: 8, icone: <FaGraduationCap />, nome: "Cursos", rota: "/cursos" },
         {
             id: 9,
             icone: <MdOutlineSettings />,
             nome: "Configurações",
+            rota: "/configuracoes",
         },
-        { id: 10, icone: <MdExitToApp />, nome: "Sair" },
+        { id: 10, icone: <MdExitToApp />, nome: "Sair", rota: "" },
     ];
 
     return (
-        <nav>
-            <NavLista>
-                {navItens.map((navitem, key) => (
-                    <NavItem key={key}>
-                        <NavIcon>{navitem.icone}</NavIcon>
-                        <NavLink>{navitem.nome}</NavLink>
-                    </NavItem>
-                ))}
-            </NavLista>
-        </nav>
+        <>
+            <nav>
+                <NavLista>
+                    {navItens.map((navitem, key) => (
+                        <NavItem key={key}>
+                            <NavIcon>{navitem.icone}</NavIcon>
+                            <CustomLink to={`${navitem.rota}`}>
+                                {navitem.nome}
+                            </CustomLink>
+                        </NavItem>
+                    ))}
+                </NavLista>
+            </nav>
+        </>
     );
 }
 
 export default Navbar;
-
