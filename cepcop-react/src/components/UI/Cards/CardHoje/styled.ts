@@ -1,4 +1,4 @@
-import { branco, cinzaClaro, cinzaEscuro } from "./../../variaveis";
+import { branco, cinzaClaro, cinzaEscuro, cinzaMedio } from "./../../variaveis";
 import styled from "styled-components";
 
 export const StyledCardHoje = styled.div`
@@ -76,5 +76,34 @@ export const StyledContainerInfo = styled.div`
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
+    }
+`;
+
+export const StyledContainerData = styled.div`
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid ${cinzaMedio};
+    padding: 0 5%;
+    width: 100%;
+
+    //--------------------------------------------->
+    @media screen and (max-width: 768px) {
+        align-items: flex-start;
+        justify-content: center;
+        border-bottom: none;
+    }
+`;
+
+export const StyledData = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 0.5rem;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 5% 0%;
+
+    //--------------------------------------------->
+    @media screen and (max-width: 768px) {
+        font-size: 0.75rem;
+        padding: 2.5% 0;
     }
 `;

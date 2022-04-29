@@ -1,8 +1,11 @@
+import ContainerData from "./ContainerData";
 import ContainerInfo from "./ContainerInfo";
+import Data from "./Data";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "./TituloCardHoje";
 
 function CardHoje() {
+    const dataHoje: string = new Date().toDateString();
     return (
         <StyledCardHoje>
             {/* 1.titulo-home card(TITULO GENERICO) tem um estilo
@@ -11,10 +14,11 @@ function CardHoje() {
             */}
             <TituloCardHoje conteudo='Cadastros Hoje:'/>
             <ContainerInfo>
-            <div className="card-cadHoje__containerData">
-                       <p className="card-cadHoje__data">02/02/2022</p>
-                       <p className="card-cadHoje__diaSemana">Sexta-feira</p>
-                   </div>
+                <ContainerData>
+                    
+                    <Data dataHoje={`${dataHoje}`}/>{/* tratar o dado aqui */}
+                    <p className="card-cadHoje__diaSemana">Sexta-feira</p>
+                </ContainerData>
                    <div className="card-cadHoje__containerTotal">
                        <p className="card-cadHoje__totalCadastros">21</p>
                        <i className="material-icons">checklist</i>
