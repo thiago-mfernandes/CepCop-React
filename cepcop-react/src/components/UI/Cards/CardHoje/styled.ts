@@ -120,3 +120,15 @@ export const StyledDiaSemana = styled.p`
         padding: 5% 0 0;
     }
 `;
+
+export const StyledContainerTotal = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0;
+    width: 100%;
+
+    //-------------------------------------->
+    @media screen and (max-width: 768px) {
+        padding: 2.5% 0;
+    }
+`;
