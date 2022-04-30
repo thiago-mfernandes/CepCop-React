@@ -1,3 +1,4 @@
+import { MdChecklist } from "react-icons/md";
 import ContainerData from "./ContainerData";
 import ContainerInfo from "./ContainerInfo";
 import ContainerTotal from "./ContainerTotal";
@@ -5,6 +6,7 @@ import Data from "./Data";
 import DiaSemana from "./DiaSemana";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "./TituloCardHoje";
+import TotalCadastros from "./TotalCadastros";
 
 function CardHoje() {
     const dataHoje: string = new Date().toDateString();
@@ -21,8 +23,13 @@ function CardHoje() {
                     <DiaSemana dia="Sexta"/>{/* tratar o dado aqui */}
                 </ContainerData>
                 <ContainerTotal>
-                    <p className="card-cadHoje__totalCadastros">21</p>
-                    <i className="material-icons">checklist</i>
+                    <TotalCadastros totalCadastros="21"/>{/* mockar o dado */}
+                    <MdChecklist 
+                        style={{
+                            fontSize: '2rem',
+                            padding: '0 0',
+                        }}
+                    />
                 </ContainerTotal>                   
             </ContainerInfo>
         </StyledCardHoje>

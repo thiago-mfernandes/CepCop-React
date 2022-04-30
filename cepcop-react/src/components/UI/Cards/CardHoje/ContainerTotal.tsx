@@ -3,7 +3,7 @@ import { StyledContainerTotal } from "./styled";
 
 function ContainerTotal(props: {children: React.ReactNode}) {
     return(
-        <StyledContainerTotal></StyledContainerTotal>
+        <StyledContainerTotal>{props.children}</StyledContainerTotal>
     )
 }
 

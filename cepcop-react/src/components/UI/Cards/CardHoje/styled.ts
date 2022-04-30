@@ -9,6 +9,7 @@ export const StyledCardHoje = styled.div`
     background-color: ${branco};
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
     border-radius: 24px;
+    border-bottom: 1px solid ${cinzaMedio};
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     width: 100%;
@@ -130,5 +131,17 @@ export const StyledContainerTotal = styled.div`
     //-------------------------------------->
     @media screen and (max-width: 768px) {
         padding: 2.5% 0;
+    }
+`;
+
+export const StyledTotalCadastros = styled.p`
+    font-family: 'Lato', sans-serif;
+    color: ${cinzaEscuro};
+    font-size: 2rem;
+    font-weight: bold;
+
+    //--------------------------------------------->
+    @media screen and (max-width: 768px) {
+        font-size: 2.25rem;
     }
 `;
