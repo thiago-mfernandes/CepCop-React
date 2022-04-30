@@ -1,16 +1,24 @@
-import TituloGenerico from "../CardFilaEspera/TituloGenerico"
-import { StyledCardAtendidos } from "./styled"
+import { MdDoneOutline } from "react-icons/md";
+import Quantidade from "../CardFilaEspera/Quantidade";
+import TituloGenerico from "../CardFilaEspera/TituloGenerico";
+import Container from "./Container";
+import { StyledCardAtendidos } from "./styled";
 
 function CardAtendidos() {
     return (
         <StyledCardAtendidos>
             <TituloGenerico conteudo="Atendidos:" />
-            <div className="card-atendidos__box">
-                <i className="material-icons">done</i>
-                <p className="card-atendidos__valor">09</p>
-            </div>
+            <Container>
+                <MdDoneOutline style={{
+                    color: '#787887',
+                    fontSize: '1.5rem',
+                    fontWeight: 700,
+                    padding: 0,
+                }} />
+                <Quantidade quantidade={5}/>{/* mockar o dado */}
+            </Container>
         </StyledCardAtendidos>
-    )
+    );
 }
 
-export default CardAtendidos
+export default CardAtendidos;

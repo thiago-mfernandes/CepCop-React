@@ -17,3 +17,12 @@ export const StyledCardAtendidos = styled.div`
         grid-row: 3 / 4;
     }
 `;
+
+export const StyledContainer = styled.div`
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto 0;
+        padding: 5% 0;
+`;
