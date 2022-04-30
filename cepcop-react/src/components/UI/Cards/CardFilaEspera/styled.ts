@@ -1,3 +1,4 @@
+import { cinzaEscuro } from 'src/components/UI/variaveis';
 import styled from "styled-components";
 import { amareloPadrao, cinzaMedio } from "../../variaveis";
 
@@ -44,4 +45,15 @@ export const StyledContainer = styled.div`
             display: none;
         }
     }
+`;
+
+export const StyledQuantidade = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 2rem;
+    font-weight: 700;
+`;
+
+export const StyledPessoa = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 0.75rem;
 `;
