@@ -1,4 +1,4 @@
-import CardHoje from "../CardHoje/CardHoje";
+import CardHoje from "../CardHoje/Index";
 import { StyledHomeCard } from "./styled";
 
 function HomeCard() {
