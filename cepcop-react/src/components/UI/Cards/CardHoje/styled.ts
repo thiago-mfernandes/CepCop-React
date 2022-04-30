@@ -135,7 +135,7 @@ export const StyledContainerTotal = styled.div`
 `;
 
 export const StyledTotalCadastros = styled.p`
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: ${cinzaEscuro};
     font-size: 2rem;
     font-weight: bold;
@@ -143,5 +143,18 @@ export const StyledTotalCadastros = styled.p`
     //--------------------------------------------->
     @media screen and (max-width: 768px) {
         font-size: 2.25rem;
+    }
+`;
+
+export const StyledPessoaCadastrada = styled.p`
+    font-size: 0.9rem;
+    padding: 2.5% 0;
+    margin: 0 7.5%;
+
+    //--------------------------------------------->
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        text-align: left;
+        width: 90%;
     }
 `;
