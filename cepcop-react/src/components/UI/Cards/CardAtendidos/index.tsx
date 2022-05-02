@@ -1,5 +1,5 @@
 import { MdDoneOutline } from "react-icons/md";
-import Quantidade from "../CardFilaEspera/Quantidade";
+import Quantidade from "../Quantidade/Quantidade";
 import TituloGenerico from "../Titulos/TituloGenerico";
 import Container from "./Container";
 import { StyledCardAtendidos } from "./styled";

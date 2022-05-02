@@ -2,7 +2,7 @@ import { MdHourglassBottom } from "react-icons/md";
 import Container from "./Container";
 import FilaEspera from "./FilaEspera";
 import Pessoa from "./Pessoa";
-import Quantidade from "./Quantidade";
+import Quantidade from "../Quantidade/Quantidade";
 import TituloGenerico from "../Titulos/TituloGenerico";
 
 function CardFilaEspera() {

@@ -47,12 +47,6 @@ export const StyledContainer = styled.div`
     }
 `;
 
-export const StyledQuantidade = styled.p`
-    color: ${cinzaEscuro};
-    font-size: 2rem;
-    font-weight: 700;
-`;
-
 export const StyledPessoa = styled.p`
     color: ${cinzaEscuro};
     font-size: 0.75rem;
