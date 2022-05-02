@@ -76,4 +76,20 @@ export const StyledIndicadorVerde = styled(StyledIndicador)`
     background-color: ${verdePadrao};
 `;
 
+export const StyledContainerGrafico = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+    padding: 3% 0;
+`;
+
+export const StyledContainerGraficoBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 5%;
+`;
+
 //@media screen and (max-width: 768px)

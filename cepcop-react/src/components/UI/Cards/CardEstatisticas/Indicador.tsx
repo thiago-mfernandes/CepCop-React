@@ -2,7 +2,7 @@ import { StyledIndicador, StyledIndicadorVerde } from "./styled";
 
 function Indicador(props: {verde?: boolean}) {
     return (
-        props.tipo ? <StyledIndicadorVerde/> : <StyledIndicador/> 
+        props.verde ? <StyledIndicadorVerde/> : <StyledIndicador/> 
     )
 }
 

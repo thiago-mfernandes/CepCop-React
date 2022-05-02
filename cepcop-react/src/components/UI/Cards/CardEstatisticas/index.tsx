@@ -1,4 +1,6 @@
 import ContainerBox from "./ContainerBox";
+import ContainerGrafico from "./ContainerGrafico";
+import ContainerGraficoBox from "./ContainerGraficoBox";
 import ContainerLegenda from "./ContainerLegenda";
 import Indicador from "./Indicador";
 import LegendaMes from "./LegendaMes";
@@ -17,9 +19,13 @@ function Estatisticas() {
                 <ContainerBox>
                     <LegendaMes legenda="Este mês:"/>
                     <Indicador verde />
-                </ContainerBox>            
-            
+                </ContainerBox>           
             </ContainerLegenda>
+            <ContainerGrafico>
+                <ContainerGraficoBox>
+                    
+                </ContainerGraficoBox>
+            </ContainerGrafico>
 
         </StyledEstatisticas>
     )
