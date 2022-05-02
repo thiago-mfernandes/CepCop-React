@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { branco, brancoBg, cinzaEscuro } from "../../variaveis";
+import {
+    azulMedioBrilhante,
+    branco,
+    brancoBg,
+    cinzaEscuro,
+} from "../../variaveis";
 
 export const StyledEstatisticas = styled.section`
     background-color: ${branco};
@@ -45,10 +50,25 @@ export const StyledContainerBox = styled.div`
     height: 10vh;
     width: 50%;
 `;
-export const StyledLegendaMes  =styled.p`
+
+export const StyledLegendaMes = styled.p`
     color: ${cinzaEscuro};
     font-size: 1.1rem;
     text-align: center;
+`;
+
+export const StyledIndicador = styled.span`
+    height: 50%;
+    width: 10%;
+    background-color: ${azulMedioBrilhante};
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    //-------------------------------------------->
+    @media screen and (max-width: 768px) {
+        height: 35px;
+        width: 35px;
+    }
 `;
 
 //@media screen and (max-width: 768px)
