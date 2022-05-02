@@ -31,4 +31,19 @@ export const StyledTitulo = styled.p`
     }
 `;
 
+export const StyledContainerLegenda = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+`;
+
+export const StyledContainerBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 50%;
+`;
+
 //@media screen and (max-width: 768px)
