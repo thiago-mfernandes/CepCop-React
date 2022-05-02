@@ -1,4 +1,5 @@
 import CardAtendidos from "../CardAtendidos";
+import Estatisticas from "../CardEstatisticas";
 import CardFilaEspera from "../CardFilaEspera";
 import CardHoje from "../CardHoje/Index";
 import CardNaoAtendidos from "../CardNaoAtendidos";
@@ -14,6 +15,7 @@ function HomeCard() {
         <CardNaoAtendidos />
         <CardTotalAnalisantes />
         <CardTurmas />
+        <Estatisticas />
 
     </StyledHomeCard>;
 }

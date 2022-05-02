@@ -9,7 +9,7 @@ import DiaSemana from "./DiaSemana";
 import PessoaCadastrada from "./PessoaCadastrada";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "../Titulos/TituloCardHoje";
-import TotalCadastros from "../Titulos/TotalCadastros";
+import TotalCadastros from "./TotalCadastros";
 
 function CardHoje() {
     const dataHoje: string = new Date().toDateString();
@@ -24,7 +24,7 @@ function CardHoje() {
                     {/* tratar o dado aqui */}
                 </ContainerData>
                 <ContainerTotal>
-                    <TotalCadastros totalCadastros="21" />
+                    <TotalCadastros total={21} />
                     {/* mockar o dado */}
                     <MdChecklist
                         style={{
