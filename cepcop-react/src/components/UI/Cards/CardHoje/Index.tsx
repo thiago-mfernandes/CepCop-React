@@ -9,7 +9,7 @@ import DiaSemana from "./DiaSemana";
 import PessoaCadastrada from "./PessoaCadastrada";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "./TituloCardHoje";
-import TotalCadastros from "./TotalCadastros";
+import TotalCadastros from "../Titulos/TotalCadastros";
 
 function CardHoje() {
     const dataHoje: string = new Date().toDateString();
