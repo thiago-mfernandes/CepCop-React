@@ -16,7 +16,7 @@ function Estatisticas() {
                 </ContainerBox> 
                 <ContainerBox>
                     <LegendaMes legenda="Este mês:"/>
-                    <Indicador />
+                    <Indicador verde />
                 </ContainerBox>            
             
             </ContainerLegenda>

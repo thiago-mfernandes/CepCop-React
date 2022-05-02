@@ -4,6 +4,7 @@ import {
     branco,
     brancoBg,
     cinzaEscuro,
+    verdePadrao,
 } from "../../variaveis";
 
 export const StyledEstatisticas = styled.section`
@@ -69,6 +70,10 @@ export const StyledIndicador = styled.span`
         height: 35px;
         width: 35px;
     }
+`;
+
+export const StyledIndicadorVerde = styled(StyledIndicador)`
+    background-color: ${verdePadrao};
 `;
 
 //@media screen and (max-width: 768px)

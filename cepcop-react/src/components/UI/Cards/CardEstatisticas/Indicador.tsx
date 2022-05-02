@@ -1,8 +1,8 @@
-import { StyledIndicador } from "./styled";
+import { StyledIndicador, StyledIndicadorVerde } from "./styled";
 
-function Indicador() {
+function Indicador(props: {verde?: boolean}) {
     return (
-        <StyledIndicador></StyledIndicador>
+        props.tipo ? <StyledIndicadorVerde/> : <StyledIndicador/> 
     )
 }
 
