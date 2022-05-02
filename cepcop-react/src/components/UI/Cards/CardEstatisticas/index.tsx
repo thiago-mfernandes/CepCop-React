@@ -1,5 +1,6 @@
 import ContainerBox from "./ContainerBox";
 import ContainerLegenda from "./ContainerLegenda";
+import LegendaMes from "./LegendaMes";
 import { StyledEstatisticas } from "./styled";
 import Titulo from "./Titulo";
 
@@ -9,7 +10,7 @@ function Estatisticas() {
             <Titulo titulo="Cadastros este mês e no mês passado:" />
             <ContainerLegenda>
             <ContainerBox>
-                <p className="estatisticas__container-legenda___mes">Mês anterior:</p>
+                <LegendaMes legenda="Mês anterior:"/>
                 <span className="estatisticas__container-legenda___indicador"></span>
             </ContainerBox>    
             

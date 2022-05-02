@@ -45,5 +45,10 @@ export const StyledContainerBox = styled.div`
     height: 10vh;
     width: 50%;
 `;
+export const StyledLegendaMes  =styled.p`
+    color: ${cinzaEscuro};
+    font-size: 1.1rem;
+    text-align: center;
+`;
 
 //@media screen and (max-width: 768px)
