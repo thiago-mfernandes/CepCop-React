@@ -10,11 +10,14 @@ function Estatisticas() {
         <StyledEstatisticas>
             <Titulo titulo="Cadastros este mês e no mês passado:" />
             <ContainerLegenda>
-            <ContainerBox>
-                <LegendaMes legenda="Mês anterior:"/>
-                <Indicador />
-            </ContainerBox>    
-            
+                <ContainerBox>
+                    <LegendaMes legenda="Mês anterior:"/>
+                    <Indicador />
+                </ContainerBox> 
+                <ContainerBox>
+                    <LegendaMes legenda="Este mês:"/>
+                    <Indicador />
+                </ContainerBox>            
             
             </ContainerLegenda>
 
