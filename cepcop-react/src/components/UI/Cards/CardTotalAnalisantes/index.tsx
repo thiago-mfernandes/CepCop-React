@@ -1,15 +1,23 @@
-import TituloGenerico from "../CardFilaEspera/TituloGenerico";
 import TotalCadastros from "../Titulos/TotalCadastros";
 import { StyledTotalAnalisantes } from "./styled";
+import Container from "./Container";
+import { MdListAlt } from "react-icons/md";
 
 function CardTotalAnalisants() {
     return (
         <StyledTotalAnalisantes>
             <TotalCadastros totalCadastros="Total de Analisantes:"/>
-            <div className="card-totalAnalisantes__box">
-                <i className="material-icons">view_list</i>
+            <Container>
+                <MdListAlt
+                    style={{
+                        color: '#787887',
+                        fontSize: '2rem',
+                        fontWeight: 700,
+                        padding: 0
+                    }}
+                />
                 <p className="card-totalAnalisantes__valor">31</p>
-            </div>
+            </Container>
             <div className="card-totalAnalisantes__box total">
                 <p className="card-totalAnalisantes__totalNaoAtendido">
                     Total de analisantes que não estão na fila:

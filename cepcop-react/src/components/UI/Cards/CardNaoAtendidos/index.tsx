@@ -1,7 +1,7 @@
 import { MdCancel } from "react-icons/md";
 import Container from "../CardAtendidos/Container";
 import Quantidade from "../CardFilaEspera/Quantidade";
-import TituloGenerico from "../CardFilaEspera/TituloGenerico";
+import TituloGenerico from "../Titulos/TituloGenerico";
 import { StyledCardNaoAtendidos } from "./styled";
 
 function CardNaoAtendidos() {

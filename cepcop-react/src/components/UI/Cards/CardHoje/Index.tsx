@@ -8,7 +8,7 @@ import Data from "./Data";
 import DiaSemana from "./DiaSemana";
 import PessoaCadastrada from "./PessoaCadastrada";
 import { StyledCardHoje } from "./styled";
-import TituloCardHoje from "./TituloCardHoje";
+import TituloCardHoje from "../Titulos/TituloCardHoje";
 import TotalCadastros from "../Titulos/TotalCadastros";
 
 function CardHoje() {

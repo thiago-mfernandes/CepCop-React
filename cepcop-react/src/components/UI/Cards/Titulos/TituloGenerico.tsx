@@ -1,8 +1,8 @@
 import { StyledTituloGenerico } from "./styled";
 
-function TituloGenerico(){
+function TituloGenerico(props: { conteudo: string }) {
     return (
-        <StyledTituloGenerico></StyledTituloGenerico>
+        <StyledTituloGenerico>{props.conteudo}</StyledTituloGenerico>
     )
 }
 

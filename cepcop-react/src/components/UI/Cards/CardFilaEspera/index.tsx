@@ -3,7 +3,7 @@ import Container from "./Container";
 import FilaEspera from "./FilaEspera";
 import Pessoa from "./Pessoa";
 import Quantidade from "./Quantidade";
-import TituloGenerico from "./TituloGenerico";
+import TituloGenerico from "../Titulos/TituloGenerico";
 
 function CardFilaEspera() {
     return (
