@@ -3,6 +3,7 @@ import CardFilaEspera from "../CardFilaEspera";
 import CardHoje from "../CardHoje/Index";
 import CardNaoAtendidos from "../CardNaoAtendidos";
 import CardTotalAnalisantes from "../CardTotalAnalisantes";
+import CardTurmas from "../CardTurmas";
 import { StyledHomeCard } from "./styled";
 
 function HomeCard() {
@@ -12,6 +13,7 @@ function HomeCard() {
         <CardAtendidos />
         <CardNaoAtendidos />
         <CardTotalAnalisantes />
+        <CardTurmas />
 
     </StyledHomeCard>;
 }
