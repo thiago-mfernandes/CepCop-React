@@ -1,3 +1,4 @@
+import { cinzaEscuro } from "src/components/UI/variaveis";
 import styled from "styled-components";
 import { branco, cinzaMedio } from "../../variaveis";
 
@@ -26,12 +27,34 @@ export const StyledContainer = styled.div`
     border-bottom: 1px solid ${cinzaMedio};
     margin: auto 0;
     padding: 5% 0;
+`;
 
-    & .material-icons {
-        @include color-fontSize($cinza-escuro, 2rem);
-        font-weight: 700;
-        padding: 0 0;
+export const StyledContainerTotal = styled(StyledContainer)`
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+`;
+
+export const StyledTitulo = styled.p`
+    color: ${cinzaEscuro};
+    font-size: 0.75rem;
+    margin: 5% 0;
+    text-align: center;
+
+    //----------------------------------------------->
+    @media screen and (max-width: 768px) {
+        word-wrap: wrap;
+        width: 75%;
     }
+`;
+
+export const StyledSecondContainer = styled(StyledContainer)`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
 `;
 
 //@media screen and (max-width:768px)
