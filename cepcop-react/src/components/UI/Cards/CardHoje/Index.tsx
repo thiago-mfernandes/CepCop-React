@@ -11,6 +11,7 @@ import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "../Titulos/TituloCardHoje";
 import TotalCadastros from "./TotalCadastros";
 import dataFormatada from "src/services/dataformatada";
+import IconCheckList from "./IconCheckList";
 
 
 function CardHoje() {
@@ -28,13 +29,7 @@ function CardHoje() {
                 <ContainerTotal>
                     <TotalCadastros total={21} />
                     {/* mockar o dado */}
-                    <MdChecklist
-                        style={{
-                            color: "#787887",
-                            fontSize: "2rem",
-                            padding: "0 0",
-                        }}
-                    />
+                    <IconCheckList />
                 </ContainerTotal>
             </ContainerInfo>
             <PessoaCadastrada pessoa="1-João da Silva" />
