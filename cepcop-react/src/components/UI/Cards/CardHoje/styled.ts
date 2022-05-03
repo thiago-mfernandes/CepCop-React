@@ -50,7 +50,7 @@ export const StyledContainerData = styled.div`
 
 export const StyledData = styled.p`
     color: ${cinzaEscuro};
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: lighter;
     padding: 5% 0%;

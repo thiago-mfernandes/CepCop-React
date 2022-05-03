@@ -10,15 +10,17 @@ import PessoaCadastrada from "./PessoaCadastrada";
 import { StyledCardHoje } from "./styled";
 import TituloCardHoje from "../Titulos/TituloCardHoje";
 import TotalCadastros from "./TotalCadastros";
+import dataFormatada from "src/services/dataformatada";
+
 
 function CardHoje() {
-    const dataHoje: string = new Date().toDateString();
+    
     return (
         <StyledCardHoje>
             <TituloCardHoje conteudo="Cadastros Hoje:" />
             <ContainerInfo>
                 <ContainerData>
-                    <Data dataHoje={`${dataHoje}`} />
+                    <Data dataHoje={`${dataFormatada()}`} />
                     {/* tratar o dado aqui */}
                     <DiaSemana dia="Sexta" />
                     {/* tratar o dado aqui */}
