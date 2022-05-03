@@ -15,10 +15,8 @@ function CardFilaEspera() {
                         color: '#787887',
                         fontSize: '2rem',
                         fontWeight: 700,
-                        paddingTop: 0,
-                        paddingBottom: 0,
-                        paddingLeft: '5%',
-                        paddingRight: "5%",
+                        marginLeft: "5%",
+                        marginRight: "5%",
                     }}
                 />
                 <Quantidade quantidade={16} />{/* mockar o dado */}

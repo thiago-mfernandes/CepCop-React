@@ -26,7 +26,7 @@ export const StyledTitulo = styled.p`
     font-size: 1.25rem;
     background-color: ${cinzaEscuro};
     border-radius: 24px 24px 0 0;
-    height: 10vh;
+    height: 6vh;
     padding: 2.5%;
     margin-bottom: 1.5%;
     text-align: center;
@@ -40,6 +40,7 @@ export const StyledTitulo = styled.p`
 export const StyledContainerLegenda = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 80%;
 `;
 

@@ -6,7 +6,7 @@ export const StyledTituloGenerico = styled.h2`
     font-size: 1rem;
     background-color: rgba(231, 231, 233, 0.5);
     border-radius: 24px 24px 0 0;
-    height: 10vh;
+    height: 6vh;
     padding: 10% 0;
     text-align: center;
 
@@ -22,7 +22,7 @@ export const StyledTituloGenerico = styled.h2`
 export const StyledTituloCardHoje = styled(StyledTituloGenerico)`
     color: ${cinzaClaro};
     font-size: 1rem;
-    height: 10vh;
+    height: 6vh;
     width: 100%;
     background-color: ${cinzaEscuro};
     margin-bottom: 7.5%;

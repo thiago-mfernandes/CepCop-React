@@ -54,7 +54,7 @@ export const StyledSecondContainer = styled(StyledContainer)`
     align-items: center;
     justify-content: space-around;
     width: 100%;
-
+    border-bottom: none;
 `;
 
 //@media screen and (max-width:768px)

@@ -20,7 +20,6 @@ export const StyledCardTurmas = styled.div`
 
 export const StyledTitulo = styled(StyledTituloGenerico)`
     font-size: 0.75rem;
-    padding-top: 25%;
     padding-left: 5%;
     padding-right: 5%;
 `;
