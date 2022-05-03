@@ -26,3 +26,4 @@ export const StyledContainer = styled.div`
         margin: auto 0;
         padding: 5% 0;
 `;
+

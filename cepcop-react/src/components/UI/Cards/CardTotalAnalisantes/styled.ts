@@ -57,4 +57,4 @@ export const StyledSecondContainer = styled(StyledContainer)`
     border-bottom: none;
 `;
 
-//@media screen and (max-width:768px)
+
