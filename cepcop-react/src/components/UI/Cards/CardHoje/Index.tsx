@@ -43,7 +43,13 @@ function CardHoje() {
             {/* mockar o dado */}
             <PessoaCadastrada pessoa="4-Jefté Maanain" />
             {/* mockar o dado */}
-            <Link to="/analisantes">
+            <Link 
+                to="/analisantes"
+                style={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}>
                 <BotaoVerAnalisantes>Ver Analisantes</BotaoVerAnalisantes>
             </Link>
         </StyledCardHoje>
