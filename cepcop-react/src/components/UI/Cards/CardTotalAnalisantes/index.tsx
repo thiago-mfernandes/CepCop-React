@@ -6,34 +6,21 @@ import Quantidade from "../Quantidade/Quantidade";
 import ContainerTotal from "./ContainerTotal";
 import Titulo from "./Titulo";
 import ContainerNaoRelacionados from "./ContainerNaoRelacionados";
+import IconList from "./IconList";
 
 function CardTotalAnalisants() {
     return (
         <StyledTotalAnalisantes>
             <TotalCadastros totalCadastros="Total de Analisantes:" />
             <Container>
-                <MdListAlt
-                    style={{
-                        color: "#787887",
-                        fontSize: "2rem",
-                        fontWeight: 700,
-                        padding: 0,
-                    }}
-                />
+                <IconList />                
                 <Quantidade quantidade={31} />
             </Container>
             <ContainerTotal>
                 <Titulo titulo="Total de analisantes que não estão na fila:" />
             </ContainerTotal>
             <ContainerNaoRelacionados>
-                <MdListAlt
-                    style={{
-                        color: "#787887",
-                        fontSize: "2rem",
-                        fontWeight: 700,
-                        padding: 0,
-                    }}
-                />
+                <IconList />
                 <Quantidade quantidade={31} />
             </ContainerNaoRelacionados>
         </StyledTotalAnalisantes>
