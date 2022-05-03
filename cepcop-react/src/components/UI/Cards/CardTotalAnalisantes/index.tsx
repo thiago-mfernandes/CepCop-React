@@ -1,7 +1,6 @@
 import TotalCadastros from "../Titulos/TotalCadastros";
 import { StyledTotalAnalisantes } from "./styled";
 import Container from "./Container";
-import { MdListAlt } from "react-icons/md";
 import Quantidade from "../Quantidade/Quantidade";
 import ContainerTotal from "./ContainerTotal";
 import Titulo from "./Titulo";
@@ -13,7 +12,7 @@ function CardTotalAnalisants() {
         <StyledTotalAnalisantes>
             <TotalCadastros totalCadastros="Total de Analisantes:" />
             <Container>
-                <IconList />                
+                <IconList />
                 <Quantidade quantidade={31} />
             </Container>
             <ContainerTotal>
@@ -21,7 +20,7 @@ function CardTotalAnalisants() {
             </ContainerTotal>
             <ContainerNaoRelacionados>
                 <IconList />
-                <Quantidade quantidade={31} />
+                <Quantidade quantidade={11} />
             </ContainerNaoRelacionados>
         </StyledTotalAnalisantes>
     );

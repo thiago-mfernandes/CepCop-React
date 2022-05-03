@@ -37,7 +37,7 @@ export const StyledContainerTotal = styled(StyledContainer)`
 
 export const StyledTitulo = styled.p`
     color: ${cinzaEscuro};
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: 5% 0;
     text-align: center;
 

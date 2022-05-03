@@ -49,7 +49,7 @@ export const StyledContainer = styled.div`
 
 export const StyledPessoa = styled.p`
     color: ${cinzaEscuro};
-    font-size: 0.75rem;
+    font-size: 1rem;
 `;
 
 export const StyledMdHourglassBottom = styled.i`
