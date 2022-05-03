@@ -1,3 +1,4 @@
+import Box from "./Box";
 import CardPrincipal from "./CardConfiguracoes/Index";
 import Container from "./Container/Index";
 
@@ -5,14 +6,12 @@ function Configuracoes() {
     return (
         <CardPrincipal>
             <Container>
-                <div className="bloco-adicionarBuscar__container config">
+                <Box>
                     <h2 className="titulo-bloco-busca">Configurações</h2>
                     <i className="material-icons config-icon">settings</i>
-                </div>
-
+                </Box>
                 <hr className="linha"></hr>
-
-                <div className="bloco-adicionarBuscar__container config">
+                <Box>
                     <p className="bloco-adicionarBuscar___alerta-config">
                         Todas as informações devem ser{" "}
                         <span>obrigatoriamente </span>preenchidas.
@@ -20,7 +19,7 @@ function Configuracoes() {
                     <p className="bloco-adicionarBuscar___alerta-config">
                         Clique em <span>Salvar</span> para finalizar.
                     </p>
-                </div>
+                </Box>
             </Container>
         </CardPrincipal>
     );
