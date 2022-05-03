@@ -1,6 +1,6 @@
 import Cabecalho from "src/components/Cabecalho";
 import { GlobalStyle } from "src/components/GlobalStyle";
-import HomeCard from "src/components/UI/Cards/CardHome";
+import HomeCard from "src/components/UI/Cards/Home/CardHome";
 
 function Home() {
     return (
