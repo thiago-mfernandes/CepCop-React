@@ -41,7 +41,7 @@ export const StyledContainerLegenda = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%;
+    width: 100%;
 `;
 
 export const StyledContainerBox = styled.div`

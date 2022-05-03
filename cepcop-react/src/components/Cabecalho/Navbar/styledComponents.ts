@@ -1,5 +1,6 @@
 import {
     azulEscuroFosco,
+    azulMedioBrilhante,
     cinzaEscuro,
     cinzaMedio,
 } from "src/components/UI/variaveis";
@@ -25,7 +26,7 @@ export const NavItem = styled.li`
     border-bottom: 1px solid ${cinzaMedio};
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    height: 8.5vh;
     justify-content: flex-start;
     text-decoration: none;
     width: 100%;
@@ -47,17 +48,18 @@ export const NavItem = styled.li`
             width: 100vw;
         }
     }
-
+    
     &:hover {
         border-left: 4px solid ${azulEscuroFosco};
         cursor: pointer;
-        //adicionar o material icons aqui
-        //.material-icons {
-        /* color: $azul-medio-brilhante;
-                  }
-                  a {
-                      color: black;
-                  } */
+        
+        i {
+            color: ${azulMedioBrilhante};
+        }
+        p {
+            color: #000;
+        }
+
 
         //-------------------------------------------->
         @media screen and (max-width: 768px) {
@@ -90,10 +92,11 @@ export const NavIcon = styled.i`
 
 export const NavLink = styled.p`
     color: ${cinzaEscuro};
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "Lato", sans-serif;
     text-decoration: none;
     width: 100%;
+
     //-------------------------------------------->
     @media screen and (max-width: 768px) {
         width: 75%;
