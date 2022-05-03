@@ -1,4 +1,4 @@
-import { cinzaEscuro } from 'src/components/UI/variaveis';
+import { cinzaEscuro } from "src/components/UI/variaveis";
 import styled from "styled-components";
 import { amareloPadrao, cinzaMedio } from "../../variaveis";
 
@@ -50,4 +50,15 @@ export const StyledContainer = styled.div`
 export const StyledPessoa = styled.p`
     color: ${cinzaEscuro};
     font-size: 0.75rem;
+`;
+
+export const StyledMdHourglassBottom = styled.i`
+    color: #787887;
+    font-size: 2rem;
+    font-weight: 70;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
