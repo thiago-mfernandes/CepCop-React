@@ -1,14 +1,16 @@
+import TipoUsuario from "src/components/Acoes/TipoUsuario";
 import Box from "./Box";
 import CardPrincipal from "./CardConfiguracoes/Index";
 import Container from "./Container/Index";
+import IconSettings from "./IconSettings";
 
 function Configuracoes() {
     return (
         <CardPrincipal>
             <Container>
                 <Box>
-                    <h2 className="titulo-bloco-busca">Configurações</h2>
-                    <i className="material-icons config-icon">settings</i>
+                    <TipoUsuario nome="Configurações"/>
+                    <IconSettings />
                 </Box>
                 <hr className="linha"></hr>
                 <Box>
