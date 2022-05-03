@@ -1,3 +1,4 @@
+import {  cinzaMedio } from "src/components/UI/variaveis";
 import styled from "styled-components";
 
 export const StyledBox = styled.div`
@@ -6,6 +7,9 @@ export const StyledBox = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2.5%;
+    &:first-of-type {
+        border-bottom: 1px solid ${cinzaMedio};
+    }
 
     //---------------------------------------------------------->
     @media screen and (max-width: 768px) {

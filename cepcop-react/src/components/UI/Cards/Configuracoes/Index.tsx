@@ -12,7 +12,6 @@ function Configuracoes() {
                     <TipoUsuario nome="Configurações"/>
                     <IconSettings />
                 </Box>
-                <hr className="linha"></hr>
                 <Box>
                     <p className="bloco-adicionarBuscar___alerta-config">
                         Todas as informações devem ser{" "}
