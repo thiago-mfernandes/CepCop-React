@@ -7,6 +7,9 @@ import IconComputer from "./IconComputer"
 import IconImage from "./IconImage"
 import IconContact from "./IconContacts"
 import IconPhone from "./IconPhone"
+import Box from "./Box"
+import Label from "src/components/UI/Label/Label"
+import InputForm from "src/components/UI/Input/InputForm"
 
 function FormConfiguracoes() {
     return (
@@ -15,23 +18,22 @@ function FormConfiguracoes() {
                 <Header>
                     <Titulo descricao="Dados de Acesso" />
                     <IconFolder />
-                </Header>
+                </Header>                    
+
+                <Box>
+                    <Label htmlFor="nome">Nome</Label>
                     
+                </Box>
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="nome">Nome</label>
-                    <input className="input input--form" type="text" placeholder="Informe seu nome..." name="nome"/>
-                </div>
-
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="email">Email</label>
+                <Box>
+                    <Label htmlFor="email">Email</Label>
                     <input className="input input--form" type="text" placeholder="Informe seu email de acesso..." name="email"/>
-                </div>
+                </Box>
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="senha">Senha</label>
+                <Box>
+                    <Label htmlFor="senha">Senha</Label>
                     <input className="input input--form" type="text" placeholder="Informe sua senha..." name="senha"/>
-                </div>
+                </Box>
             </Card>            
 
             <Card>
@@ -40,10 +42,10 @@ function FormConfiguracoes() {
                     <IconComputer />
                 </Header>
                 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="nome">Status</label>
+                <Box>
+                    <Label htmlFor="status">Status</Label>
                     <input className="input input--form" type="text" placeholder="Ativo/Inativo" name="nome"/>
-                </div>
+                </Box>
             </Card>
 
             <Card>
@@ -52,15 +54,15 @@ function FormConfiguracoes() {
                     <IconImage />
                 </Header>
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="nome">Editar Imagem</label>
+                <Box>
+                    <Label htmlFor="nome">Editar Imagem</Label>
                     <div className="config-page-card__input-button-box">
 
                         <input className="input input--escolherArquivo" type="text" placeholder="Ativo/Inativo" name="nome"/>
                         <button className="config-page-card__input-button-box___button">Escolher Arquivo</button>
 
                     </div>
-                </div>
+                </Box>
             </Card>
 
             <Card>
@@ -70,15 +72,15 @@ function FormConfiguracoes() {
                 </Header>
                 
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="email">Email</label>
+                <Box>
+                    <Label htmlFor="email">Email</Label>
                     <input className="input input--form" type="text" placeholder="seu-email@dominio.com" name="email"/>
-                </div>
+                </Box>
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="telefone">Telefone</label>
+                <Box>
+                    <Label htmlFor="telefone">Telefone</Label>
                     <input className="input input--form" type="text" placeholder="seu-email@dominio.com" name="telefone"/>
-                </div>
+                </Box>
             </Card>
 
             <Card>
@@ -87,10 +89,10 @@ function FormConfiguracoes() {
                     <IconPhone />
                 </Header>
 
-                <div className="config-page-card__input-box">
-                    <label className="label" htmlFor="inscricoes">Inscrições</label>
+                <Box>
+                    <Label htmlFor="inscricoes">Inscrições</Label>
                     <input className="input input--form" type="text" placeholder="Sim" name="inscricoes"/>
-                </div>                    
+                </Box>                    
             </Card>
             <button className="btn botao-salvar config">Salvar</button>
 
