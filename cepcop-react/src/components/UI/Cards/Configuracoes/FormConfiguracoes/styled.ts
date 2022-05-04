@@ -1,4 +1,4 @@
-import { cinzaClaro } from "src/components/UI/variaveis";
+import { cinzaClaro, cinzaMedio } from "src/components/UI/variaveis";
 import styled from "styled-components";
 
 export const StyledConfigPage = styled.section`
@@ -26,12 +26,12 @@ export const StyledCard = styled.div`
     font-family: "Fjalla-One", sans-serif;
     background-color: ${cinzaClaro};
     border-radius: 16px;
-    box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
     padding: 2% 5% 7.5%;
 
     //posicionamento de cada filho no desktop:
     //------------------------------------------------//
-    &:first-of-type{
+    &:first-of-type {
         grid-column: 1 / 2;
         grid-row: 1 / 5;
     }
@@ -59,4 +59,15 @@ export const StyledCard = styled.div`
     @media screen and (max-width: 768px) {
         margin: 5% 0;
     }
+`;
+
+export const StyledCardConfigHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid ${cinzaMedio};
+    padding-bottom: 2.5%;
+    margin-top: 5%;
+    width: 100%;
 `;

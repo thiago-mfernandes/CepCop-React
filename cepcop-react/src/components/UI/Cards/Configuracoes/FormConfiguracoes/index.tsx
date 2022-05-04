@@ -1,14 +1,15 @@
 import CardConfiguracoes from "./CardConfiguracoes"
 import Card from "./Card"
+import Header from "./Header"
 
 function FormConfiguracoes() {
     return (
         <CardConfiguracoes>
             <Card>
-                <div className="config-page-card__header">
+                <Header>
                     <h3 className="config-page-card__header___titulo">Dados de Acesso</h3>
                     <i className="material-icons material-icons--config">folder_shared</i>
-                </div>
+                </Header>
                     
 
                 <div className="config-page-card__input-box">
@@ -28,10 +29,10 @@ function FormConfiguracoes() {
             </Card>            
 
             <Card>
-                <div className="config-page-card__header">
+                <Header>
                     <h3 className="config-page-card__header___titulo">Status do Sistema</h3>
                     <i className="material-icons material-icons--config">computer</i>
-                </div>
+                </Header>
                 
                 <div className="config-page-card__input-box">
                     <label className="label" htmlFor="nome">Status</label>
@@ -40,10 +41,10 @@ function FormConfiguracoes() {
             </Card>
 
             <Card>
-                <div className="config-page-card__header">
+                <Header>
                     <h3 className="config-page-card__header___titulo">Imagem do Perfil</h3>
                     <i className="material-icons material-icons--config">image</i>
-                </div>
+                </Header>
 
                 <div className="config-page-card__input-box">
                     <label className="label" htmlFor="nome">Editar Imagem</label>
@@ -57,10 +58,10 @@ function FormConfiguracoes() {
             </Card>
 
             <Card>
-                <div className="config-page-card__header">
+                <Header>
                     <h3 className="config-page-card__header___titulo">Informações de Contato</h3>
                     <i className="material-icons material-icons--config">import_contacts</i>
-                </div>
+                </Header>
                 
 
                 <div className="config-page-card__input-box">
@@ -75,10 +76,10 @@ function FormConfiguracoes() {
             </Card>
 
             <Card>
-                <div className="config-page-card__header">
+                <Header>
                     <h3 className="config-page-card__header___titulo">Informações de Contato</h3>
                     <i className="material-icons material-icons--config">phone_callback</i>
-                </div>
+                </Header>
 
                 <div className="config-page-card__input-box">
                     <label className="label" htmlFor="inscricoes">Inscrições</label>
