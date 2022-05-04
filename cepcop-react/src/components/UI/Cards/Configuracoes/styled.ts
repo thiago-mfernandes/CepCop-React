@@ -3,6 +3,7 @@ import { cinzaEscuro } from "../../variaveis";
 
 export const StyledIconSettings = styled.i`
     color: ${cinzaEscuro};
-    font-size: 1.5rem;
-    padding: 0;
+    font-size: 2rem;
+    padding-right: 5%;
+    padding-bottom: 2.5%
 `;

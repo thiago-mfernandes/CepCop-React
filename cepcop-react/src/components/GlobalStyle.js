@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { cinzaClaro, brancoBg } from "./UI/variaveis";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -8,8 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
     border-collapse: collapse;
 	border-spacing: 0;
     list-style: none;

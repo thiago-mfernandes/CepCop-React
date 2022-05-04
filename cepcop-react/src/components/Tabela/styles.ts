@@ -52,7 +52,7 @@ export const StyledTheadTr = styled.tr`
 `;
 
 export const StyledTheadTh = styled.th`
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Fjalla-One", sans-serif;
     padding: 0.25%;
     vertical-align: middle;
 `;

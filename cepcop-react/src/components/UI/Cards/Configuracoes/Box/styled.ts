@@ -10,6 +10,10 @@ export const StyledBox = styled.div`
     &:first-of-type {
         border-bottom: 1px solid ${cinzaMedio};
     }
+    &:last-of-type {
+        flex-direction: column;
+        margin: 0 5% 1.5%;
+    }
 
     //---------------------------------------------------------->
     @media screen and (max-width: 768px) {

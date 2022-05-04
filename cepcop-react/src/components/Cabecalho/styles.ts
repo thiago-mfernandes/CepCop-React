@@ -63,7 +63,7 @@ export const HeaderUserImg = styled.img`
 export const HeaderUserName = styled.span`
     font-size: 1rem;
     color: ${azulEscuroFosco};
-    font-family: "Lato" sans-serif;
+    font-family: "Lato", sans-serif;
 
     //-------------------------------------------->
     @media screen and (max-width: 768px) {
