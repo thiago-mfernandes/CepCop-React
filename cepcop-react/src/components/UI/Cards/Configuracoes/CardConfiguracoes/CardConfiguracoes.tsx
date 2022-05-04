@@ -1,10 +1,10 @@
-import { StyledCardPrincipal } from "./styled";
+import { StyledConfigPage } from "./styled";
 
 function CardConfiguracoes(props: {children: React.ReactNode}) {
     return (
-        <StyledCardPrincipal>
+        <StyledConfigPage>
             {props.children}
-        </StyledCardPrincipal>
+        </StyledConfigPage>
     );
 }
 
