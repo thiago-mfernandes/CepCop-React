@@ -10,6 +10,10 @@ import IconPhone from "./IconPhone"
 import Box from "./Box"
 import Label from "src/components/UI/Label/Label"
 import InputForm from "src/components/UI/Input/InputForm"
+import ButtonBox from "./BoxButton"
+import BotaoEscolherArquivo from "./BotaoEscolherArquivo"
+import { BotaoSalvarConfiguracoes } from "src/components/UI/Botao/BotaoSalvarConfiguracoes"
+import InputEscolherArquivo from "src/components/UI/Input/InputEscolherArquivo"
 
 function FormConfiguracoes() {
     return (
@@ -18,84 +22,107 @@ function FormConfiguracoes() {
                 <Header>
                     <Titulo descricao="Dados de Acesso" />
                     <IconFolder />
-                </Header>                    
-
+                </Header>                  
                 <Box>
                     <Label htmlFor="nome">Nome</Label>
-                    
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"Informe seu nome..."} 
+                        name={"nome"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
-
                 <Box>
                     <Label htmlFor="email">Email</Label>
-                    <input className="input input--form" type="text" placeholder="Informe seu email de acesso..." name="email"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"Informe seu email de acesso..."} 
+                        name={"email"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
-
                 <Box>
                     <Label htmlFor="senha">Senha</Label>
-                    <input className="input input--form" type="text" placeholder="Informe sua senha..." name="senha"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"Informe sua senha..."} 
+                        name={"senha"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
-            </Card>            
-
+            </Card>
             <Card>
                 <Header>
                     <Titulo descricao="Status do Sistema" />
                     <IconComputer />
-                </Header>
-                
+                </Header>                
                 <Box>
                     <Label htmlFor="status">Status</Label>
-                    <input className="input input--form" type="text" placeholder="Ativo/Inativo" name="nome"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"Ativo/Inativo"} 
+                        name={"nome"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
             </Card>
-
             <Card>
                 <Header>
                     <Titulo descricao="Imagem do Perfil" />
                     <IconImage />
                 </Header>
-
                 <Box>
                     <Label htmlFor="nome">Editar Imagem</Label>
-                    <div className="config-page-card__input-button-box">
-
-                        <input className="input input--escolherArquivo" type="text" placeholder="Ativo/Inativo" name="nome"/>
-                        <button className="config-page-card__input-button-box___button">Escolher Arquivo</button>
-
-                    </div>
+                    <ButtonBox>
+                        <InputEscolherArquivo 
+                            type={"text"} 
+                            placeholder={"Ativo/Inativo"} 
+                            name={"nome"} 
+                            ariaDescribedby={""} />
+                        <BotaoEscolherArquivo />
+                    </ButtonBox>
                 </Box>
             </Card>
-
             <Card>
                 <Header>
                     <Titulo descricao="Informações de Contato" /> 
                     <IconContact />
                 </Header>
-                
-
                 <Box>
                     <Label htmlFor="email">Email</Label>
-                    <input className="input input--form" type="text" placeholder="seu-email@dominio.com" name="email"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"seu-email@dominio.com"} 
+                        name={"email"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
-
                 <Box>
                     <Label htmlFor="telefone">Telefone</Label>
-                    <input className="input input--form" type="text" placeholder="seu-email@dominio.com" name="telefone"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"seu-email@dominio.com"} 
+                        name={"telefone"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>
             </Card>
-
             <Card>
                 <Header>
                     <Titulo descricao="Informações de Contato" /> 
                     <IconPhone />
                 </Header>
-
                 <Box>
                     <Label htmlFor="inscricoes">Inscrições</Label>
-                    <input className="input input--form" type="text" placeholder="Sim" name="inscricoes"/>
+                    <InputForm 
+                        type={"text"} 
+                        placeholder={"Sim"} 
+                        name={"inscricoes"} 
+                        ariaDescribedby={""} 
+                    />
                 </Box>                    
             </Card>
-            <button className="btn botao-salvar config">Salvar</button>
-
+            <BotaoSalvarConfiguracoes>Salvar</BotaoSalvarConfiguracoes>
         </CardConfiguracoes>
     )
 }
