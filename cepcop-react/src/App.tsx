@@ -9,12 +9,16 @@ import Home from "./pages/home";
 import Supervisores from "./pages/supervisores";
 import Turmas from "./pages/turmas";
 import Configuracoes from "./pages/configuracoes";
+import Login from "./pages/login";
+import Cadastro from "./pages/cadastro";
 //mockar o dado do usuario
 
 function App() {
     return (
         <>
             <Routes>
+                <Route path="login" element={<Login />} />
+                <Route path="cadastro" element={<Cadastro />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="coordenadores" element={<Coordenadores />} />
                 <Route path="supervisores" element={<Supervisores />} />
