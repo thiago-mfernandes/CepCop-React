@@ -3,6 +3,7 @@ import Box from "./Box";
 import CardPrincipal from "./CardConfiguracoes/Index";
 import Container from "./Container/Index";
 import IconSettings from "./IconSettings";
+import Instrucoes from "./Instrucoes";
 
 function Configuracoes() {
     return (
@@ -13,13 +14,16 @@ function Configuracoes() {
                     <IconSettings />
                 </Box>
                 <Box>
-                    <p className="bloco-adicionarBuscar___alerta-config">
-                        Todas as informações devem ser{" "}
-                        <span>obrigatoriamente </span>preenchidas.
-                    </p>
-                    <p className="bloco-adicionarBuscar___alerta-config">
-                        Clique em <span>Salvar</span> para finalizar.
-                    </p>
+                    <Instrucoes 
+                        descricao1="Todas as informações devem ser "
+                        textoSpan="obrigatoriamente"
+                        descricao2=" preenchidas."
+                    />
+                    <Instrucoes 
+                        descricao1="Clique em "
+                        textoSpan="Salvar"
+                        descricao2=" para finalizar."
+                    />
                 </Box>
             </Container>
         </CardPrincipal>
