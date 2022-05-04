@@ -1,9 +1,9 @@
+import CardConfiguracoes from "./CardConfiguracoes"
 import Card from "./Card"
-
 
 function FormConfiguracoes() {
     return (
-        <>
+        <CardConfiguracoes>
             <Card>
                 <div className="config-page-card__header">
                     <h3 className="config-page-card__header___titulo">Dados de Acesso</h3>
@@ -87,7 +87,7 @@ function FormConfiguracoes() {
             </Card>
             <button className="btn botao-salvar config">Salvar</button>
 
-        </>
+        </CardConfiguracoes>
     )
 }
 

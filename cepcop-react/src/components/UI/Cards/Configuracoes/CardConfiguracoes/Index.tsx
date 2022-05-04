@@ -3,11 +3,10 @@ import Box from "../Box";
 import Container from "../Container/Index";
 import IconSettings from "../IconSettings";
 import Instrucoes from "../Instrucoes";
-import CardConfiguracoes from "./CardConfiguracoes";
 
 function CardPrincipal() {
     return (
-        <CardConfiguracoes>
+        <>
             <Container>
                 <Box>
                     <TipoUsuario nome="Configurações"/>
@@ -26,7 +25,7 @@ function CardPrincipal() {
                     />
                 </Box>
             </Container>
-        </CardConfiguracoes>
+        </>
     );
 }
 
