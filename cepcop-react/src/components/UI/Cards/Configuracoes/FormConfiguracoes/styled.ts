@@ -1,4 +1,4 @@
-import { cinzaClaro, cinzaMedio } from "src/components/UI/variaveis";
+import { cinzaClaro, cinzaEscuro, cinzaMedio } from "src/components/UI/variaveis";
 import styled from "styled-components";
 
 export const StyledConfigPage = styled.section`
@@ -70,4 +70,15 @@ export const StyledCardConfigHeader = styled.div`
     padding-bottom: 2.5%;
     margin-top: 5%;
     width: 100%;
+`;
+
+export const StyledTitulo = styled.h3`
+    color: ${cinzaEscuro};
+    font-size: 1.25rem;
+`;
+
+export const StyledIconDefault = styled.i`
+    color: ${cinzaEscuro};
+    font-size: 1.5rem;
+    padding: 0;
 `;

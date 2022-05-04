@@ -1,14 +1,20 @@
 import CardConfiguracoes from "./CardConfiguracoes"
 import Card from "./Card"
 import Header from "./Header"
+import Titulo from "./Titulo"
+import IconFolder from "./IconFolder"
+import IconComputer from "./IconComputer"
+import IconImage from "./IconImage"
+import IconContact from "./IconContacts"
+import IconPhone from "./IconPhone"
 
 function FormConfiguracoes() {
     return (
         <CardConfiguracoes>
             <Card>
                 <Header>
-                    <h3 className="config-page-card__header___titulo">Dados de Acesso</h3>
-                    <i className="material-icons material-icons--config">folder_shared</i>
+                    <Titulo descricao="Dados de Acesso" />
+                    <IconFolder />
                 </Header>
                     
 
@@ -30,8 +36,8 @@ function FormConfiguracoes() {
 
             <Card>
                 <Header>
-                    <h3 className="config-page-card__header___titulo">Status do Sistema</h3>
-                    <i className="material-icons material-icons--config">computer</i>
+                    <Titulo descricao="Status do Sistema" />
+                    <IconComputer />
                 </Header>
                 
                 <div className="config-page-card__input-box">
@@ -42,8 +48,8 @@ function FormConfiguracoes() {
 
             <Card>
                 <Header>
-                    <h3 className="config-page-card__header___titulo">Imagem do Perfil</h3>
-                    <i className="material-icons material-icons--config">image</i>
+                    <Titulo descricao="Imagem do Perfil" />
+                    <IconImage />
                 </Header>
 
                 <div className="config-page-card__input-box">
@@ -59,8 +65,8 @@ function FormConfiguracoes() {
 
             <Card>
                 <Header>
-                    <h3 className="config-page-card__header___titulo">Informações de Contato</h3>
-                    <i className="material-icons material-icons--config">import_contacts</i>
+                    <Titulo descricao="Informações de Contato" /> 
+                    <IconContact />
                 </Header>
                 
 
@@ -77,8 +83,8 @@ function FormConfiguracoes() {
 
             <Card>
                 <Header>
-                    <h3 className="config-page-card__header___titulo">Informações de Contato</h3>
-                    <i className="material-icons material-icons--config">phone_callback</i>
+                    <Titulo descricao="Informações de Contato" /> 
+                    <IconPhone />
                 </Header>
 
                 <div className="config-page-card__input-box">
