@@ -8,7 +8,6 @@ function Configuracoes() {
             <CardPrincipal />
             <FormConfiguracoes />
         </ConfigCard>
-            
     );
 }
 
