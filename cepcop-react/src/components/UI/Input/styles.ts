@@ -55,5 +55,6 @@ export const StyledInputEscolherArquivo = styled(Container)`
 export const StyledInputLogin = styled(Container)`
     margin: 0;
     margin-bottom: 2%;
-    width: 100%;
+    width: 95%;
+    height: 6.5vh;
 `;

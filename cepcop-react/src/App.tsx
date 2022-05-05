@@ -1,5 +1,5 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import "./App.css";
 import Analisantes from "./pages/analisantes";
 import Atendimentos from "./pages/atendimentos";
 import Coordenadores from "./pages/coordenadores";
