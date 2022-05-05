@@ -1,9 +1,11 @@
 import ContainerFundoAzul from "../Login/ContainerFundoAzul"
+import CardAlerta from "./CardAlerta"
 
 function PageCadastro() {
     return (
         <ContainerFundoAzul>
-            <p>Cadastro teste 2</p>
+            <CardAlerta/>
+            
         </ContainerFundoAzul>
     )
 }
