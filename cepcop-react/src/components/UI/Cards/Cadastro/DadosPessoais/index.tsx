@@ -29,11 +29,11 @@ function DadosPessoais() {
                         required
                     />
                     <EntradaDadosObrigatoria 
-                        conteudoLabel={"Nome Completo"} 
-                        typeInput={"text"} 
-                        placeholderInput={"Informe seu nome:"} 
+                        conteudoLabel={"CPF"} 
+                        typeInput={"number"} 
+                        placeholderInput={"000.000.000-00"} 
                         nameInput={"nome-completo"} 
-                        ariaDescribedbyInput={"nome-completo"}
+                        ariaDescribedbyInput={"textHelp"}
                     />                   
                 </Opcoes>
             </TituloBox>

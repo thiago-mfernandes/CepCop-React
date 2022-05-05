@@ -1,5 +1,6 @@
+import IEntradaDados from "src/components/Interfaces/IEntradaDados";
 import styled from "styled-components";
-import { cinzaEscuro, vermelhoPadrao } from "../variaveis";
+import { cinzaEscuro, vermelhoPadrao, verdePadrao } from "../variaveis";
 
 export const StyledLabel = styled.label`
     color: ${cinzaEscuro};
@@ -17,10 +18,14 @@ export const StyledLabelLogin = styled(StyledLabel)`
     }
 `;
 
-export const StyledLabelCadastro = styled(StyledLabel)`
+export const StyledLabelCadastro = styled(StyledLabel)<IEntradaDados>`
     opacity: 0.7;
 
     & span {
-        color: ${vermelhoPadrao};
+        color: ${(props) =>
+            props.obrigatorio ? `${vermelhoPadrao}` : `${verdePadrao}`};
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: 2%;
     }
 `;

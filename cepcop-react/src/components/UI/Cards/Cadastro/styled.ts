@@ -87,5 +87,4 @@ export const StyledContainerConteudo = styled.div`
     }
 `;
 
-
 //@media screen and (max-width: 768px)
