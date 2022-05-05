@@ -4,7 +4,7 @@ import InputLogin from "../../Input/InputLogin"
 import LabelLogin from "../../Label/LabelLogin"
 import Box from "./Box"
 import BoxInput from "./BoxInput"
-import Container from "./Container"
+import Container from "./ContainerFundoAzul"
 
 function Login() {
     return (
