@@ -75,3 +75,17 @@ export const StyledOpcoes = styled.div`
         flex-direction: column;
     }
 `;
+
+export const StyledContainerConteudo = styled.div`
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+
+    //------------------------------------------------------>
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+`;
+
+
+//@media screen and (max-width: 768px)
