@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cinzaClaro } from "../../variaveis";
+import { cinzaClaro, cinzaMedio } from "../../variaveis";
 
 export const StyledCardCadastro = styled.div`
     background: ${cinzaClaro};    
@@ -20,4 +20,13 @@ export const StyledFormCadastro = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
+`;
+
+export const StyledSecaoGenerica = styled.section`
+    border-bottom: 1px solid ${cinzaMedio};
+    height: 100%;
+    padding: 2.5% 0;
+    &:hover {
+        cursor: pointer;
+    }
 `;
