@@ -10,7 +10,8 @@ function CardAtendidos() {
             <TituloGenerico conteudo="Atendidos:" />
             <Container>
                 <IconDone />
-                <Quantidade quantidade={5}/>{/* mockar o dado */}
+                <Quantidade quantidade={5} />
+                {/* mockar o dado */}
             </Container>
         </StyledCardAtendidos>
     );

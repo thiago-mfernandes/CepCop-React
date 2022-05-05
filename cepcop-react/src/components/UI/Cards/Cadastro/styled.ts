@@ -1,5 +1,5 @@
-import { azulMedioBrilhante } from './../../variaveis';
-import { cinzaEscuro } from 'src/components/UI/variaveis';
+import { azulMedioBrilhante } from "./../../variaveis";
+import { cinzaEscuro } from "src/components/UI/variaveis";
 import styled from "styled-components";
 import { cinzaClaro, cinzaMedio } from "../../variaveis";
 
@@ -51,9 +51,27 @@ export const StyledTituloSecao = styled.h2`
 export const StyledIconExpand = styled.i`
     color: ${azulMedioBrilhante};
     font-size: 2.5rem;
-    animation: Flashing .8s ease-in alternate infinite;
+    animation: Flashing 0.8s ease-in alternate infinite;
     padding: 0;
     &:hover {
         cursor: pointer;
+    }
+`;
+
+export const StyledOpcoes = styled.div`
+    //1.o bloco vai ficar sem aparecer
+    display: flex;
+    flex-direction: row;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s ease;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    //------------------------------------------------------>
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
     }
 `;

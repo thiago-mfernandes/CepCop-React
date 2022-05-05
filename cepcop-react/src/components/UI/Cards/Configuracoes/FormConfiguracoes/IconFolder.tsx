@@ -9,4 +9,4 @@ function IconFolder() {
     );
 }
 
-export default IconFolder
+export default IconFolder;

@@ -1,6 +1,7 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledContainer } from "./styled";
 
-function Container(props: { children:React.ReactNode }) {
+function Container(props: IChildProp) {
     return (
         <StyledContainer>{props.children}</StyledContainer>
     )

@@ -1,4 +1,4 @@
-import {  cinzaMedio } from "src/components/UI/variaveis";
+import { cinzaMedio } from "src/components/UI/variaveis";
 import styled from "styled-components";
 
 export const StyledBox = styled.div`

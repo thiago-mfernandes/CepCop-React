@@ -1,6 +1,7 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledContainerTotal } from "./styled";
 
-function ContainerTotal(props: { children:React.ReactNode }) {
+function ContainerTotal(props: IChildProp) {
     return (
         <StyledContainerTotal>
             {props.children}

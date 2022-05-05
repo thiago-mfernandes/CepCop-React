@@ -1,4 +1,5 @@
 import IconExpand from "../IconExpand";
+import Opcoes from "../Opcoes";
 import { StyledSecaoGenerica } from "../styled";
 import TituloBox from "../TituloBox";
 import TituloSecao from "../TituloSecao";
@@ -8,10 +9,13 @@ function DadosPessoais() {
         <StyledSecaoGenerica>
             <TituloBox>
                 <TituloSecao conteudo={"Dados Pessoais"} />
-                <IconExpand/>
-            </TituloBox>      
+                <IconExpand />
+                <Opcoes>
+                    
+                </Opcoes>
+            </TituloBox>
         </StyledSecaoGenerica>
-    )
+    );
 }
 
-export default DadosPessoais
+export default DadosPessoais;

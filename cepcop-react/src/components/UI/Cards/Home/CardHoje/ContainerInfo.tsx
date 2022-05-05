@@ -1,7 +1,8 @@
 import React from "react";
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledContainerInfo } from "./styled";
 
-function ContainerInfo(props: { children: React.ReactNode }) {
+function ContainerInfo(props: IChildProp) {
     return <StyledContainerInfo>{props.children}</StyledContainerInfo>;
 }
 

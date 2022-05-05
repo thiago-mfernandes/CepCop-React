@@ -1,7 +1,8 @@
 import React from "react";
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledContainer } from "./styled";
 
-function ContainerFundoAzul(props: { children: React.ReactNode }) {
+function ContainerFundoAzul(props: IChildProp) {
     return (
     <StyledContainer>{props.children}</StyledContainer>
     );

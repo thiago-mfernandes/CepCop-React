@@ -1,9 +1,8 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledBox } from "./styled";
 
-function Box(props: {children: React.ReactNode}) {
-    return (
-        <StyledBox>{props.children}</StyledBox>
-    )
+function Box(props: IChildProp) {
+    return <StyledBox>{props.children}</StyledBox>;
 }
 
-export default Box
+export default Box;

@@ -1,12 +1,12 @@
 import { MdDoneOutline } from "react-icons/md";
 import { StyledIconDefault } from "../../../Icones/Styled";
 
-function IconDone(){
+function IconDone() {
     return (
         <StyledIconDefault>
             <MdDoneOutline />
         </StyledIconDefault>
-    )
+    );
 }
 
-export default IconDone
+export default IconDone;

@@ -6,7 +6,7 @@ function IconSettings() {
         <StyledIconSettings>
             <MdSettings />
         </StyledIconSettings>
-    )
+    );
 }
 
-export default IconSettings
+export default IconSettings;

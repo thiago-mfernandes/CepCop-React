@@ -6,7 +6,7 @@ function IconPhone() {
         <StyledIconSettings>
             <MdPhoneCallback />
         </StyledIconSettings>
-    )
+    );
 }
 
-export default IconPhone
+export default IconPhone;

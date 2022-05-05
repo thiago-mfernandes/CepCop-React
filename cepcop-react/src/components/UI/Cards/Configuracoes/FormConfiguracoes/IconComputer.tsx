@@ -9,4 +9,4 @@ function IconComputer() {
     );
 }
 
-export default IconComputer
+export default IconComputer;

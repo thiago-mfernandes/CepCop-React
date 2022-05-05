@@ -9,4 +9,4 @@ function IconImage() {
     );
 }
 
-export default IconImage
+export default IconImage;

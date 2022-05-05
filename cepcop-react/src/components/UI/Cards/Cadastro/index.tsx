@@ -1,16 +1,16 @@
-import ContainerFundoAzul from "../Login/ContainerFundoAzul"
-import CardAlerta from "./CardAlerta"
-import CardCadastro from "./CardCadastro"
-import DadosPessoais from "./DadosPessoais"
-import EnderecoComercial from "./EnderecoComercial"
-import EnderecoResidencial from "./EnderecoResidencial"
-import FormCadastro from "./FormCadastro"
-import OutrasInformacoes from "./OutrasInformacoes"
+import ContainerFundoAzul from "../Login/ContainerFundoAzul";
+import CardAlerta from "./CardAlerta";
+import CardCadastro from "./CardCadastro";
+import DadosPessoais from "./DadosPessoais";
+import EnderecoComercial from "./EnderecoComercial";
+import EnderecoResidencial from "./EnderecoResidencial";
+import FormCadastro from "./FormCadastro";
+import OutrasInformacoes from "./OutrasInformacoes";
 
 function PageCadastro() {
     return (
         <ContainerFundoAzul>
-            <CardAlerta/>
+            <CardAlerta />
             <CardCadastro>
                 <FormCadastro>
                     <DadosPessoais />
@@ -20,7 +20,7 @@ function PageCadastro() {
                 </FormCadastro>
             </CardCadastro>
         </ContainerFundoAzul>
-    )
+    );
 }
 
-export default PageCadastro
+export default PageCadastro;

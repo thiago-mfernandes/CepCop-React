@@ -9,4 +9,4 @@ function IconContact() {
     );
 }
 
-export default IconContact
+export default IconContact;

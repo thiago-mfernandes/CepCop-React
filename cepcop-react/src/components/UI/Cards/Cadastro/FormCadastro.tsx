@@ -1,8 +1,9 @@
 import React from "react";
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledFormCadastro } from "./styled";
 
-function FormCadastro(props: { children: React.ReactNode }) {
+function FormCadastro(props: IChildProp) {
     return <StyledFormCadastro>{props.children}</StyledFormCadastro>;
 }
 
-export default FormCadastro
+export default FormCadastro;

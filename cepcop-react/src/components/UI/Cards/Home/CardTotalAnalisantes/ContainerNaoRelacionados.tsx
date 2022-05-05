@@ -1,6 +1,7 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import { StyledSecondContainer } from "./styled";
 
-function ContainerNaoRelacionados(props: {children:React.ReactNode}) {
+function ContainerNaoRelacionados(props: IChildProp) {
     return (
         <StyledSecondContainer>{props.children}</StyledSecondContainer>
     )

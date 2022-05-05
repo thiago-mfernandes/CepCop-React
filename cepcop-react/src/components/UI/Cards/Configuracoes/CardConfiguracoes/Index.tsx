@@ -9,16 +9,16 @@ function CardPrincipal() {
         <>
             <Container>
                 <Box>
-                    <TipoUsuario nome="Configurações"/>
+                    <TipoUsuario nome="Configurações" />
                     <IconSettings />
                 </Box>
                 <Box>
-                    <Instrucoes 
+                    <Instrucoes
                         descricao1="Todas as informações devem ser "
                         textoSpan="obrigatoriamente"
                         descricao2=" preenchidas."
                     />
-                    <Instrucoes 
+                    <Instrucoes
                         descricao1="Clique em "
                         textoSpan="Salvar"
                         descricao2=" para finalizar."
@@ -29,4 +29,4 @@ function CardPrincipal() {
     );
 }
 
-export default CardPrincipal
+export default CardPrincipal;

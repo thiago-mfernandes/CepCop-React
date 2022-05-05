@@ -92,5 +92,3 @@ export const StyledContainerGraficoBox = styled.div`
     height: 20vh;
     width: 5%;
 `;
-
-//@media screen and (max-width: 768px)
