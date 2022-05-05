@@ -1,12 +1,17 @@
 import ContainerFundoAzul from "../Login/ContainerFundoAzul"
 import CardAlerta from "./CardAlerta"
-import CardCadastro from "./CardAlerta/CardCadastro"
+import CardCadastro from "./CardCadastro"
+import FormCadastro from "./FormCadastro"
 
 function PageCadastro() {
     return (
         <ContainerFundoAzul>
             <CardAlerta/>
-            <CardCadastro> </CardCadastro>
+            <CardCadastro>
+                <FormCadastro>
+                    
+                </FormCadastro>
+            </CardCadastro>
         </ContainerFundoAzul>
     )
 }
