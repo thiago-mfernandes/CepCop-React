@@ -1,3 +1,4 @@
+import IconExpand from "../IconExpand";
 import { StyledSecaoGenerica } from "../styled";
 import TituloBox from "../TituloBox";
 import TituloSecao from "../TituloSecao";
@@ -7,7 +8,7 @@ function DadosPessoais() {
         <StyledSecaoGenerica>
             <TituloBox>
                 <TituloSecao conteudo={"Dados Pessoais"} />
-                <i id="arrow-expand" className="material-icons arrow-expand">expand_more</i>
+                <IconExpand/>
             </TituloBox>      
         </StyledSecaoGenerica>
     )

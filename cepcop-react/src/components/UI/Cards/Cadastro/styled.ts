@@ -1,3 +1,4 @@
+import { azulMedioBrilhante } from './../../variaveis';
 import { cinzaEscuro } from 'src/components/UI/variaveis';
 import styled from "styled-components";
 import { cinzaClaro, cinzaMedio } from "../../variaveis";
@@ -45,4 +46,14 @@ export const StyledTituloSecao = styled.h2`
     color: ${cinzaEscuro};
     font-size: 1.5rem;
     opacity: 0.9;
+`;
+
+export const StyledIconExpand = styled.i`
+    color: ${azulMedioBrilhante};
+    font-size: 2.5rem;
+    animation: Flashing .8s ease-in alternate infinite;
+    padding: 0;
+    &:hover {
+        cursor: pointer;
+    }
 `;
