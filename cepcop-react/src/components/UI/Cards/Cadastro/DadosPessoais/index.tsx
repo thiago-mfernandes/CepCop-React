@@ -1,4 +1,6 @@
-import EntradaDadosObrigatoria from "../EntradaDadosObrigatoria";
+import BoxTelefone from "../BoxTelefone";
+import ContainerTelefone from "../ContainerTelefone";
+import EntradaDados from "../EntradaDados";
 import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
 import { StyledSecaoGenerica } from "../styled";
@@ -12,7 +14,7 @@ function DadosPessoais() {
                 <TituloSecao conteudo={"Dados Pessoais"} />
                 <IconExpand />
                 <Opcoes>
-                    <EntradaDadosObrigatoria 
+                    <EntradaDados 
                         conteudoLabel={"Nome Completo"} 
                         typeInput={"text"} 
                         placeholderInput={"Informe seu nome:"} 
@@ -20,7 +22,7 @@ function DadosPessoais() {
                         ariaDescribedbyInput={"nome-completo"}
                         required
                     />
-                    <EntradaDadosObrigatoria 
+                    <EntradaDados 
                         conteudoLabel={"Email"} 
                         typeInput={"email"} 
                         placeholderInput={"seunome@dominio.com"} 
@@ -28,13 +30,18 @@ function DadosPessoais() {
                         ariaDescribedbyInput={"emailHelp"}
                         required
                     />
-                    <EntradaDadosObrigatoria 
+                    <EntradaDados 
                         conteudoLabel={"CPF"} 
                         typeInput={"number"} 
                         placeholderInput={"000.000.000-00"} 
                         nameInput={"nome-completo"} 
                         ariaDescribedbyInput={"textHelp"}
-                    />                   
+                    />
+                    <ContainerTelefone>
+                        <BoxTelefone>
+                            
+                        </BoxTelefone>
+                    </ContainerTelefone>                   
                 </Opcoes>
             </TituloBox>
         </StyledSecaoGenerica>

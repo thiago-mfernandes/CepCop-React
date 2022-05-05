@@ -87,4 +87,17 @@ export const StyledContainerConteudo = styled.div`
     }
 `;
 
+export const StyledContainerTelefone = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid ${cinzaMedio};
+    border-bottom: 1px solid ${cinzaMedio};
+    margin: 7.5% 0;
+`;
+
+export const StyledContainerConteudoTelefone = styled(StyledContainerConteudo)`
+    width: 100%;
+`;
+
 //@media screen and (max-width: 768px)
