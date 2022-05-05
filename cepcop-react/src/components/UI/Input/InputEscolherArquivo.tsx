@@ -4,10 +4,10 @@ import { StyledInputEscolherArquivo } from "./styles";
 function InputEscolherArquivo(props: IInputProps) {
     return (
         <StyledInputEscolherArquivo
-            type={props.type}
-            placeholder={props.placeholder}
-            name={props.name}
-            aria-describedby={props.ariaDescribedby}
+        type={props.typeInput}
+        placeholder={props.placeholderInput}
+        name={props.nameInput}
+        aria-describedby={props.ariaDescribedbyInput}
         ></StyledInputEscolherArquivo>
     );
 }

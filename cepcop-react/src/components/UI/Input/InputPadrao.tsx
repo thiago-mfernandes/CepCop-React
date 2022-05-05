@@ -4,10 +4,10 @@ import IInputProps from "src/components/Interfaces/IInputProps";
 function InputPadrao(props: IInputProps) {
     return (
         <Container
-            type={props.type}
-            placeholder={props.placeholder}
-            name={props.name}
-            aria-describedby={props.ariaDescribedby}
+            type={props.typeInput}
+            placeholder={props.placeholderInput}
+            name={props.nameInput}
+            aria-describedby={props.ariaDescribedbyInput}
         />
     );
 }

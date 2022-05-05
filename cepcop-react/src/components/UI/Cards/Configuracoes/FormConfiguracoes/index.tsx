@@ -26,28 +26,28 @@ function FormConfiguracoes() {
                 <Box>
                     <Label htmlFor="nome">Nome</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"Informe seu nome..."}
-                        name={"nome"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"Informe seu nome..."}
+                        nameInput={"nome"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
                 <Box>
                     <Label htmlFor="email">Email</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"Informe seu email de acesso..."}
-                        name={"email"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"Informe seu email de acesso..."}
+                        nameInput={"email"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
                 <Box>
                     <Label htmlFor="senha">Senha</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"Informe sua senha..."}
-                        name={"senha"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"Informe sua senha..."}
+                        nameInput={"senha"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
             </Card>
@@ -59,10 +59,10 @@ function FormConfiguracoes() {
                 <Box>
                     <Label htmlFor="status">Status</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"Ativo/Inativo"}
-                        name={"nome"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"Ativo/Inativo"}
+                        nameInput={"nome"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
             </Card>
@@ -75,10 +75,10 @@ function FormConfiguracoes() {
                     <Label htmlFor="nome">Editar Imagem</Label>
                     <ButtonBox>
                         <InputEscolherArquivo
-                            type={"text"}
-                            placeholder={"Ativo/Inativo"}
-                            name={"nome"}
-                            ariaDescribedby={""}
+                            typeInput={"text"}
+                            placeholderInput={"Ativo/Inativo"}
+                            nameInput={"nome"}
+                            ariaDescribedbyInput={""}
                         />
                         <BotaoEscolherArquivo />
                     </ButtonBox>
@@ -92,19 +92,19 @@ function FormConfiguracoes() {
                 <Box>
                     <Label htmlFor="email">Email</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"seu-email@dominio.com"}
-                        name={"email"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"seu-email@dominio.com"}
+                        nameInput={"email"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
                 <Box>
                     <Label htmlFor="telefone">Telefone</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"seu-email@dominio.com"}
-                        name={"telefone"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"seu-email@dominio.com"}
+                        nameInput={"telefone"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
             </Card>
@@ -116,10 +116,10 @@ function FormConfiguracoes() {
                 <Box>
                     <Label htmlFor="inscricoes">Inscrições</Label>
                     <InputForm
-                        type={"text"}
-                        placeholder={"Sim"}
-                        name={"inscricoes"}
-                        ariaDescribedby={""}
+                        typeInput={"text"}
+                        placeholderInput={"Sim"}
+                        nameInput={"inscricoes"}
+                        ariaDescribedbyInput={""}
                     />
                 </Box>
             </Card>

@@ -1,6 +1,6 @@
 export default interface IInputProps {
-    type: string;
-    placeholder: string;
-    name: string;
-    ariaDescribedby: string;
+    typeInput: string;
+    placeholderInput: string;
+    nameInput: string;
+    ariaDescribedbyInput: string;
 }

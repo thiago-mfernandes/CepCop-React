@@ -19,8 +19,8 @@ export const StyledLabelLogin = styled(StyledLabel)`
 
 export const StyledLabelCadastro = styled(StyledLabel)`
     opacity: 0.7;
-    
+
     & span {
-       color : ${vermelhoPadrao};
+        color: ${vermelhoPadrao};
     }
 `;

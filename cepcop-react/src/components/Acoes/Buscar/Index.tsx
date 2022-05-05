@@ -7,10 +7,10 @@ function Buscar() {
     return (
         <>
             <InputPadrao
-                type="text"
-                placeholder="Pesquise..."
-                name=""
-                ariaDescribedby=""
+                typeInput="text"
+                placeholderInput="Pesquise..."
+                nameInput=""
+                ariaDescribedbyInput=""
             />
             <Container
                 borderBottom="0px"

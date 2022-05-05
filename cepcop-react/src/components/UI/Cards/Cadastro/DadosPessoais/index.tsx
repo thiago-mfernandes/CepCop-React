@@ -1,5 +1,4 @@
-import LabelCadastro from "src/components/UI/Label/LabelCadastro";
-import ContainerConteudo from "../ContainerConteudo";
+import EntradaDadosObrigatoria from "../EntradaDadosObrigatoria";
 import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
 import { StyledSecaoGenerica } from "../styled";
@@ -13,15 +12,29 @@ function DadosPessoais() {
                 <TituloSecao conteudo={"Dados Pessoais"} />
                 <IconExpand />
                 <Opcoes>
-                    <ContainerConteudo>
-                        <LabelCadastro>
-                            NomeCompleto
-                            <span> *</span>
-                        </LabelCadastro>
-                        
-                        <input className="input input--form" type="text" name="nome-completo" aria-describedby="nome-completo" required placeholder="Informe seu nome"/>
-                        <p className="msg-adicional"></p>
-                    </ContainerConteudo>
+                    <EntradaDadosObrigatoria 
+                        conteudoLabel={"Nome Completo"} 
+                        typeInput={"text"} 
+                        placeholderInput={"Informe seu nome:"} 
+                        nameInput={"nome-completo"} 
+                        ariaDescribedbyInput={"nome-completo"}
+                        required
+                    />
+                    <EntradaDadosObrigatoria 
+                        conteudoLabel={"Email"} 
+                        typeInput={"email"} 
+                        placeholderInput={"seunome@dominio.com"} 
+                        nameInput={"email"} 
+                        ariaDescribedbyInput={"emailHelp"}
+                        required
+                    />
+                    <EntradaDadosObrigatoria 
+                        conteudoLabel={"Nome Completo"} 
+                        typeInput={"text"} 
+                        placeholderInput={"Informe seu nome:"} 
+                        nameInput={"nome-completo"} 
+                        ariaDescribedbyInput={"nome-completo"}
+                    />                   
                 </Opcoes>
             </TituloBox>
         </StyledSecaoGenerica>
