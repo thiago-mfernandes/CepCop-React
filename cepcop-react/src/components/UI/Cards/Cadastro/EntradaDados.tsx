@@ -1,16 +1,24 @@
 import IEntradaDados from "src/components/Interfaces/IEntradaDados";
 import ILabel from "src/components/Interfaces/ILabel";
 import InputForm from "../../Input/InputForm";
-import LabelCadastro from "../../Label/LabelCadastro";
+import LabelCadastroObrigatorio from "../../Label/LabelCadastroObrigatorio";
+import LabelCadastroOpcional from "../../Label/LabelCadastroOpcional";
 import { StyledContainerConteudo } from "./styled";
 
-function EntradaDadosObrigatoria(props: IEntradaDados, param: ILabel) {
+function EntradaDados(props: IEntradaDados, param: ILabel) {
     return (
         <StyledContainerConteudo>
-            <LabelCadastro
-                htmlFor={param.htmlFor}
-                conteudoLabel={param.conteudoLabel}
-            />
+            {props.labelObrigatorio ? (
+                <LabelCadastroObrigatorio
+                    conteudoLabel={`${props.conteudoLabel}`}
+                    htmlFor={`${props.htmlFor}`}
+                />
+            ) : (
+                <LabelCadastroOpcional
+                    conteudoLabel={`${props.conteudoLabel}`}
+                    htmlFor={`${props.htmlFor}`}
+                />
+            )}
             <InputForm
                 typeInput={props.typeInput}
                 placeholderInput={props.placeholderInput}
@@ -21,4 +29,4 @@ function EntradaDadosObrigatoria(props: IEntradaDados, param: ILabel) {
     );
 }
 
-export default EntradaDadosObrigatoria;
+export default EntradaDados;

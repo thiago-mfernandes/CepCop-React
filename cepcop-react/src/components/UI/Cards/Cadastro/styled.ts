@@ -35,7 +35,7 @@ export const StyledSecaoGenerica = styled.section`
 
 export const StyledTituloBox = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 2% 0;
@@ -58,12 +58,13 @@ export const StyledIconExpand = styled.i`
     }
 `;
 
+//modificar aqui (max-height: 0; overflow: hidden;)
 export const StyledOpcoes = styled.div`
     //1.o bloco vai ficar sem aparecer
     display: flex;
     flex-direction: row;
-    max-height: 0;
-    overflow: hidden;
+    max-height: 100%; //modificar
+    overflow: visible; //modificar
     transition: max-height 3s ease;
     flex-wrap: wrap;
     justify-content: space-between;

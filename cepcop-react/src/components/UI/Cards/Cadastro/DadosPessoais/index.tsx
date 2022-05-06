@@ -3,7 +3,7 @@ import ContainerTelefone from "../ContainerTelefone";
 import EntradaDados from "../EntradaDados";
 import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
-import {  StyledSecaoGenerica } from "../styled";
+import { StyledSecaoGenerica } from "../styled";
 import TituloBox from "../TituloBox";
 import TituloBoxTelefone from "../TituloBoxTelefone";
 import TituloSecao from "../TituloSecao";
@@ -16,37 +16,44 @@ function DadosPessoais() {
                 <TituloSecao conteudo={"Dados Pessoais"} />
                 <IconExpand />
                 <Opcoes>
-                    <EntradaDados 
-                        conteudoLabel={"Nome Completo"} 
-                        typeInput={"text"} 
-                        placeholderInput={"Informe seu nome:"} 
-                        nameInput={"nome-completo"} 
+                    <EntradaDados
+                        labelObrigatorio={true}
+                        required
+                        conteudoLabel={"Nome Completo"}
+                        typeInput={"text"}
+                        name={"nome"}
+                        htmlFor={"nome"}
+                        placeholderInput={"Informe seu nome:"}
+                        nameInput={"nome-completo"}
                         ariaDescribedbyInput={"nome-completo"}
-                        required
                     />
-                    <EntradaDados 
-                        conteudoLabel={"Email"} 
-                        typeInput={"email"} 
-                        placeholderInput={"seunome@dominio.com"} 
-                        nameInput={"email"} 
+                    <EntradaDados
+                        labelObrigatorio={true}
+                        required
+                        conteudoLabel={"Email"}
+                        typeInput={"email"}
+                        placeholderInput={"seunome@dominio.com"}
+                        nameInput={"email"}
                         ariaDescribedbyInput={"emailHelp"}
-                        required
+                        name={"email"}
+                        htmlFor={"email"}
                     />
-                    <EntradaDados 
-                        conteudoLabel={"CPF"} 
-                        typeInput={"number"} 
-                        placeholderInput={"000.000.000-00"} 
-                        nameInput={"nome-completo"} 
+                    <EntradaDados
+                        labelObrigatorio={false}
+                        conteudoLabel={"CPF"}
+                        typeInput={"number"}
+                        placeholderInput={"000.000.000-00"}
+                        nameInput={"nome-completo"}
                         ariaDescribedbyInput={"textHelp"}
+                        name={"cpf"}
+                        htmlFor={"cpf"}
                     />
                     <ContainerTelefone>
                         <BoxTelefone>
-                            <TituloBoxTelefone/>
-                            <EntradaDadosTelefone>
-                                
-                            </EntradaDadosTelefone>
+                            <TituloBoxTelefone />
+                            <EntradaDadosTelefone>Telefones</EntradaDadosTelefone>
                         </BoxTelefone>
-                    </ContainerTelefone>                   
+                    </ContainerTelefone>
                 </Opcoes>
             </TituloBox>
         </StyledSecaoGenerica>
