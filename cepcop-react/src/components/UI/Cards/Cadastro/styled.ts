@@ -111,4 +111,8 @@ export const StyledTituloBoxTelefone = styled.h2`
     text-align: center;
 `;
 
+export const StyledEntradaDadosTelefone = styled(StyledContainerConteudo)`
+    width: 100%;
+`;
+
 //@media screen and (max-width: 768px)

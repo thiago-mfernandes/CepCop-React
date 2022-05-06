@@ -1,13 +1,13 @@
-import LabelCadastro from "src/components/UI/Label/LabelCadastro";
 import BoxTelefone from "../BoxTelefone";
 import ContainerTelefone from "../ContainerTelefone";
 import EntradaDados from "../EntradaDados";
 import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
-import { StyledSecaoGenerica } from "../styled";
+import {  StyledSecaoGenerica } from "../styled";
 import TituloBox from "../TituloBox";
 import TituloBoxTelefone from "../TituloBoxTelefone";
 import TituloSecao from "../TituloSecao";
+import EntradaDadosTelefone from "../EntradaDadosTelefone";
 
 function DadosPessoais() {
     return (
@@ -42,7 +42,9 @@ function DadosPessoais() {
                     <ContainerTelefone>
                         <BoxTelefone>
                             <TituloBoxTelefone/>
-                            
+                            <EntradaDadosTelefone>
+                                
+                            </EntradaDadosTelefone>
                         </BoxTelefone>
                     </ContainerTelefone>                   
                 </Opcoes>
