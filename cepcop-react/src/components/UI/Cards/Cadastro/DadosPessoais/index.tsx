@@ -1,3 +1,4 @@
+import LabelCadastro from "src/components/UI/Label/LabelCadastro";
 import BoxTelefone from "../BoxTelefone";
 import ContainerTelefone from "../ContainerTelefone";
 import EntradaDados from "../EntradaDados";
@@ -5,6 +6,7 @@ import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
 import { StyledSecaoGenerica } from "../styled";
 import TituloBox from "../TituloBox";
+import TituloBoxTelefone from "../TituloBoxTelefone";
 import TituloSecao from "../TituloSecao";
 
 function DadosPessoais() {
@@ -39,6 +41,7 @@ function DadosPessoais() {
                     />
                     <ContainerTelefone>
                         <BoxTelefone>
+                            <TituloBoxTelefone/>
                             
                         </BoxTelefone>
                     </ContainerTelefone>                   

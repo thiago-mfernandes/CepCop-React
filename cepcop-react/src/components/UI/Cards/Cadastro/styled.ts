@@ -100,4 +100,15 @@ export const StyledContainerConteudoTelefone = styled(StyledContainerConteudo)`
     width: 100%;
 `;
 
+export const StyledTituloBoxTelefone = styled.h2`
+    @extend %fjala;
+    @include color-fontSize($cinza-escuro, 1.1rem);
+    font-family: "Fjalla-One", sans-serif;
+    color: ${cinzaEscuro};
+    font-size: 1.1rem;
+    margin: 5% 0;
+    opacity: 0.7;
+    text-align: center;
+`;
+
 //@media screen and (max-width: 768px)
