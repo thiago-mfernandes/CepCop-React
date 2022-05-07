@@ -7,11 +7,11 @@ import {
     HeaderBox,
     HeaderUserName,
     HeaderUserImg,
-} from "./styles";
+} from "./stylesHeader";
 
 const userImage: string = require("./../../img/vince-fleming2.jpg") as string;
 
-function Header(props: {userName: string}) {
+export default function Header(props: { userName: string }) {
     return (
         <StyledHeader>
             <Container>
@@ -33,5 +33,3 @@ function Header(props: {userName: string}) {
         </StyledHeader>
     );
 }
-
-export default Header;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { cinzaClaro, cinzaEscuro, azulEscuroFosco } from "../UI/variaveis";
+
 export const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
