@@ -1,9 +1,5 @@
-import Login from "src/components/UI/Cards/Login"
+import Login from "src/components/UI/Cards/Login";
 
-function LoginPage() {
-    return (
-        <Login/>
-    )
+export default function LoginPage() {
+    return <Login />;
 }
-
-export default LoginPage

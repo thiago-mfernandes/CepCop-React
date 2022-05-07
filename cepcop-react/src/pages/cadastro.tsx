@@ -1,9 +1,5 @@
-import PageCadastro from "src/components/UI/Cards/Cadastro"
+import PageCadastro from "src/components/UI/Cards/Cadastro";
 
-function Cadastro() {
-    return (
-        <PageCadastro/>
-    )
+export default function Cadastro() {
+    return <PageCadastro />;
 }
-
-export default Cadastro

@@ -2,7 +2,7 @@ import Cabecalho from "src/components/Cabecalho";
 import { GlobalStyle } from "src/components/GlobalStyle";
 import HomeCard from "src/components/UI/Cards/Home/CardHome";
 
-function Home() {
+export default function Home() {
     return (
         <div className="App">
             <GlobalStyle />
@@ -11,5 +11,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;
