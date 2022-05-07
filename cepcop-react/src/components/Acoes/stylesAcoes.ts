@@ -9,7 +9,6 @@ export const CardAcoes = styled.section`
     box-shadow: 4px 4px 20px 0 rgb(0 0 0 / 25%);
     margin: 2.5% auto;
     overflow: auto;
-    //----------------------------------------->
     @media screen and (max-width: 768px) {
         height: 100%;
         width: 100%;
@@ -24,8 +23,6 @@ export const SecaoAcoes = styled.div`
     margin-bottom: 2.5%;
     padding: 5% 0 0.75%;
     width: 100%;
-
-    //-------------------------------------------->
     @media screen and (max-width: 768px) {
         border-radius: 0 0 16px 16px;
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);

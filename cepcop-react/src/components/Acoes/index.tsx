@@ -2,9 +2,9 @@ import Adicionar from "./Adicionar";
 import Buscar from "./Buscar/Index";
 import Rodape from "../Rodape";
 import Tabela from "../Tabela";
-import { CardAcoes, SecaoAcoes } from "./styles";
+import { CardAcoes, SecaoAcoes } from "./stylesAcoes";
 
-function Acoes() {
+export default function Acoes() {
     return (
         <main>
             <CardAcoes>
@@ -18,5 +18,3 @@ function Acoes() {
         </main>
     );
 }
-
-export default Acoes;
