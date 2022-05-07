@@ -3,4 +3,5 @@ export default interface IInputProps {
     placeholderInput: string;
     nameInput: string;
     ariaDescribedbyInput: string;
+    id?: string | number;
 }

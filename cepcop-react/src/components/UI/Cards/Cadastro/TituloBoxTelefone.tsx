@@ -1,10 +1,10 @@
 import { vermelhoPadrao } from "../../variaveis";
 import { StyledTituloBoxTelefone } from "./styled";
 
-function TituloBoxTelefone() {
+function TituloBoxTelefone(props: {conteudoTitulo : string}) {
     return (
         <StyledTituloBoxTelefone>
-            <span style={{color: `${vermelhoPadrao}`}}> *</span>
+            {props.conteudoTitulo}<span style={{color: `${vermelhoPadrao}`}}> *</span>
         </StyledTituloBoxTelefone>
     )
 }

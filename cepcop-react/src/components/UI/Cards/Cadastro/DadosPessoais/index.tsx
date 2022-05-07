@@ -8,6 +8,9 @@ import TituloBox from "../TituloBox";
 import TituloBoxTelefone from "../TituloBoxTelefone";
 import TituloSecao from "../TituloSecao";
 import EntradaDadosTelefone from "../EntradaDadosTelefone";
+import LabelCadastroObrigatorio from "src/components/UI/Label/LabelCadastroObrigatorio";
+import InputForm from "src/components/UI/Input/InputForm";
+import BotaoAdicionarNovo from "src/components/UI/Botao/BotaoAdicionarNovo";
 
 function DadosPessoais() {
     return (
@@ -50,8 +53,21 @@ function DadosPessoais() {
                     />
                     <ContainerTelefone>
                         <BoxTelefone>
-                            <TituloBoxTelefone />
-                            <EntradaDadosTelefone>Telefones</EntradaDadosTelefone>
+                            <TituloBoxTelefone conteudoTitulo={"Telefones"} />
+                            <EntradaDadosTelefone>
+                                <LabelCadastroObrigatorio
+                                    conteudoLabel={"Telefone"}
+                                    htmlFor={"telefone"}
+                                />
+                                <InputForm
+                                    id={"inputTelefone"}
+                                    typeInput={"text"}
+                                    placeholderInput={"(XX)XXXXX-XXXX"}
+                                    nameInput={"telefone[]"}
+                                    ariaDescribedbyInput={"textHelp"}
+                                />
+                                <BotaoAdicionarNovo conteudoBotao={"+"} />
+                            </EntradaDadosTelefone>
                         </BoxTelefone>
                     </ContainerTelefone>
                 </Opcoes>

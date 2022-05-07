@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { azulEscuroFosco, branco } from "../variaveis";
 import { Abstract } from "./Absctrat";
 
-export const BotaoAdicionarNovo = styled(Abstract)`
+const StyledBotaoAdicionarNovo = styled(Abstract)`
     height: 6vh;
     width: 15%;
 
@@ -27,3 +27,13 @@ export const BotaoAdicionarNovo = styled(Abstract)`
         }
     }
 `;
+
+function BotaoAdicionarNovo(props: { conteudoBotao: string }) {
+    return (
+        <StyledBotaoAdicionarNovo>
+            {props.conteudoBotao}
+        </StyledBotaoAdicionarNovo>
+    );
+}
+
+export default BotaoAdicionarNovo;
