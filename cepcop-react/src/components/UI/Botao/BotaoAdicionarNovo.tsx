@@ -5,7 +5,6 @@ import { Abstract } from "./Absctrat";
 const StyledBotaoAdicionarNovo = styled(Abstract)`
     height: 6vh;
     width: 15%;
-
     &:hover {
         color: ${branco};
         font-size: 0.95rem;
@@ -14,13 +13,10 @@ const StyledBotaoAdicionarNovo = styled(Abstract)`
         border: 1px solid ${azulEscuroFosco};
         transition: all 0.3s ease-in-out;
     }
-
-    //---------------------------------------------->
     @media screen and (max-width: 768px) {
         height: 4vh;
         width: 30%;
         margin-right: 5%;
-
         &:hover {
             height: 4vh;
             width: 30%;
@@ -28,12 +24,10 @@ const StyledBotaoAdicionarNovo = styled(Abstract)`
     }
 `;
 
-function BotaoAdicionarNovo(props: { conteudoBotao: string }) {
+export default function BotaoAdicionarNovo(props: { conteudoBotao: string }) {
     return (
         <StyledBotaoAdicionarNovo>
             {props.conteudoBotao}
         </StyledBotaoAdicionarNovo>
     );
 }
-
-export default BotaoAdicionarNovo;

@@ -1,7 +1,11 @@
-import { StyledTitulo } from "./styled";
+import { cinzaEscuro } from "src/components/UI/variaveis";
+import styled from "styled-components";
 
-function Titulo(props: { descricao: string }) {
+const StyledTitulo = styled.h3`
+    color: ${cinzaEscuro};
+    font-size: 1.25rem;
+`;
+
+export default function Titulo(props: { descricao: string }) {
     return <StyledTitulo>{props.descricao}</StyledTitulo>;
 }
-
-export default Titulo;

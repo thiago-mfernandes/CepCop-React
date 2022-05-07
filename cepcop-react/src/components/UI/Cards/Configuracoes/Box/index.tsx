@@ -1,8 +1,26 @@
 import IChildProp from "src/components/Interfaces/IChildProp";
-import { StyledBox } from "./styled";
+import { cinzaMedio } from "src/components/UI/variaveis";
+import styled from "styled-components";
 
-function Box(props: IChildProp) {
+const StyledBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+    &:first-of-type {
+        border-bottom: 1px solid ${cinzaMedio};
+    }
+    &:last-of-type {
+        flex-direction: column;
+        margin: 0 5% 1.5%;
+    }
+    @media screen and (max-width: 768px) {
+        justify-content: space-between;
+        padding: 0 5% 0 0;
+    }
+`;
+
+export default function Box(props: IChildProp) {
     return <StyledBox>{props.children}</StyledBox>;
 }
-
-export default Box;

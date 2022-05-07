@@ -1,7 +1,13 @@
+import styled from "styled-components";
+import { StyledInputPadrao } from "./InputPadrao";
 import IInputProps from "src/components/Interfaces/IInputProps";
-import { StyledInputForm } from "./styles";
 
-function InputForm(props: IInputProps) {
+const StyledInputForm = styled(StyledInputPadrao)`
+    margin: 0;
+    margin-bottom: 5%;
+    width: 100%;
+`;
+export default function InputForm(props: IInputProps) {
     return (
         <StyledInputForm
             type={props.typeInput}
@@ -11,5 +17,3 @@ function InputForm(props: IInputProps) {
         ></StyledInputForm>
     );
 }
-
-export default InputForm;

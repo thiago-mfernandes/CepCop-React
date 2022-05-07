@@ -1,12 +1,10 @@
 import { MdContacts } from "react-icons/md";
-import { StyledIconDefault } from "./styled";
+import { StyledIconDefault } from "./styledIconDefault";
 
-function IconContact() {
+export default function IconContact() {
     return (
         <StyledIconDefault>
             <MdContacts />
         </StyledIconDefault>
     );
 }
-
-export default IconContact;

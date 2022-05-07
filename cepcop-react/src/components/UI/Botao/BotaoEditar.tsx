@@ -7,19 +7,16 @@ const StyledBotaoEditar = styled.i`
     font-size: 1.25rem;
     cursor: pointer;
     padding-right: 2.5%;
-    //---------------------------------------------->
     @media screen and (max-width: 768px) {
         font-size: 1;
         margin: 0 5%;
     }
 `;
 
-function BotaoEditar(props: { id?: string }) {
+export default function BotaoEditar(props: { id?: string }) {
     return (
         <StyledBotaoEditar id={props.id}>
             <MdModeEdit />
         </StyledBotaoEditar>
     );
 }
-
-export default BotaoEditar;

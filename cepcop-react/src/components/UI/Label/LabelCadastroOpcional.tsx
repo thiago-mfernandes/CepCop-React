@@ -1,6 +1,6 @@
 import ILabel from "src/components/Interfaces/ILabel";
 import { verdePadrao } from "../variaveis";
-import { StyledLabelCadastro } from "./styled";
+import { StyledLabelCadastro } from "./LabelCadastro";
 
 function LabelCadastroOpcional(props: ILabel) {
     return (

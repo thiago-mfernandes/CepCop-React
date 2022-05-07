@@ -3,7 +3,7 @@ import ContainerTelefone from "../ContainerTelefone";
 import EntradaDados from "../EntradaDados";
 import IconExpand from "../IconExpand";
 import Opcoes from "../Opcoes";
-import { StyledSecaoGenerica } from "../styled";
+import { StyledSecaoGenerica } from "../OutrasInformacoes";
 import TituloBox from "../TituloBox";
 import TituloBoxTelefone from "../TituloBoxTelefone";
 import TituloSecao from "../TituloSecao";
@@ -12,7 +12,7 @@ import LabelCadastroObrigatorio from "src/components/UI/Label/LabelCadastroObrig
 import InputForm from "src/components/UI/Input/InputForm";
 import BotaoAdicionarNovo from "src/components/UI/Botao/BotaoAdicionarNovo";
 
-function DadosPessoais() {
+export default function DadosPessoais() {
     return (
         <StyledSecaoGenerica>
             <TituloBox>
@@ -75,5 +75,3 @@ function DadosPessoais() {
         </StyledSecaoGenerica>
     );
 }
-
-export default DadosPessoais;

@@ -1,12 +1,10 @@
 import { MdFolderShared } from "react-icons/md";
-import { StyledIconDefault } from "./styled";
+import { StyledIconDefault } from "./styledIconDefault";
 
-function IconFolder() {
+export default function IconFolder() {
     return (
         <StyledIconDefault>
             <MdFolderShared />
         </StyledIconDefault>
     );
 }
-
-export default IconFolder;

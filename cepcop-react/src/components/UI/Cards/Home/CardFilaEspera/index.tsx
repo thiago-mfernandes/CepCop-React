@@ -5,7 +5,7 @@ import Quantidade from "../Quantidade/Quantidade";
 import TituloGenerico from "../../Home/Titulos/TituloGenerico";
 import IconHourglass from "./IconHourglass";
 
-function CardFilaEspera() {
+export default function CardFilaEspera() {
     return (
         <FilaEspera>
             <TituloGenerico conteudo="Fila de espera:" />
@@ -21,5 +21,3 @@ function CardFilaEspera() {
         </FilaEspera>
     );
 }
-
-export default CardFilaEspera;

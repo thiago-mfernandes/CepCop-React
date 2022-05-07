@@ -1,6 +1,6 @@
 import InputPadrao from "src/components/UI/Input/InputPadrao";
 import Container from "../Container";
-import Output from "src/components/UI/Output/Index";
+import Output from "src/components/UI/Output";
 import { Conteudo } from "./styles";
 
 function Buscar() {

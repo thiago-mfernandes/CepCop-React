@@ -1,8 +1,7 @@
-import { branco } from "./../variaveis";
-import { cinzaEscuro } from "src/components/UI/variaveis";
+import { branco, cinzaEscuro } from "../variaveis";
 import styled from "styled-components";
 
-export const Container = styled.div`
+const StyledContainer = styled.div`
     color: ${cinzaEscuro};
     font-size: 0.75rem;
     font-style: italic;
@@ -21,3 +20,7 @@ export const Container = styled.div`
         width: 10%;
     }
 `;
+
+export default function Output(props: { valor: number }) {
+    return <StyledContainer>{props.valor}</StyledContainer>;
+}

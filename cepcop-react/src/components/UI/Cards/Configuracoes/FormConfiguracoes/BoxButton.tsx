@@ -1,9 +1,12 @@
-import React from "react";
 import IChildProp from "src/components/Interfaces/IChildProp";
-import { StyledBoxButton } from "./styled";
+import styled from "styled-components";
 
-function ButtonBox(props: IChildProp) {
+const StyledBoxButton = styled.div`
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+`;
+
+export default function ButtonBox(props: IChildProp) {
     return <StyledBoxButton>{props.children}</StyledBoxButton>;
 }
-
-export default ButtonBox;

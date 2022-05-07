@@ -1,10 +1,14 @@
+import styled from "styled-components";
 import IChildProp from "src/components/Interfaces/IChildProp";
-import { StyledContainerBoxInput } from "./styled";
 
-function BoxInput(props: IChildProp) {
-    return (
-        <StyledContainerBoxInput>{props.children}</StyledContainerBoxInput>
-    )
+const StyledContainerBoxInput = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+`;
+
+export default function BoxInput(props: IChildProp) {
+    return <StyledContainerBoxInput>{props.children}</StyledContainerBoxInput>;
 }
-
-export default BoxInput

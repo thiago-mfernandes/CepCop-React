@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { azulEscuroFosco } from "../variaveis";
 import { Abstract } from "./Absctrat";
 
-export const BotaoSalvarConfiguracoes = styled(Abstract)`
+const StyledBotaoSalvarConfiguracoes = styled(Abstract)`
     margin-left: 0;
     margin: 6.5% auto 0;
     &:hover {
@@ -10,3 +10,7 @@ export const BotaoSalvarConfiguracoes = styled(Abstract)`
         transition: all 0.3s ease-in-out;
     }
 `;
+
+export default function BotaoSalvarConfiguracoes() {
+    return <StyledBotaoSalvarConfiguracoes></StyledBotaoSalvarConfiguracoes>;
+}

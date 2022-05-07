@@ -1,12 +1,10 @@
 import { MdComputer } from "react-icons/md";
-import { StyledIconDefault } from "./styled";
+import { StyledIconDefault } from "./styledIconDefault";
 
-function IconComputer() {
+export default function IconComputer() {
     return (
         <StyledIconDefault>
             <MdComputer />
         </StyledIconDefault>
     );
 }
-
-export default IconComputer;

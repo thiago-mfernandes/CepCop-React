@@ -2,16 +2,13 @@ import styled from "styled-components";
 import { brancoBg } from "../variaveis";
 import { Abstract } from "./Absctrat";
 
-export const BotaoVerAnalisantes = styled(Abstract)`
+const StyledBotaoVerAnalisantes = styled(Abstract)`
     height: 5vh;
     width: 70%;
     margin: 7.5% auto 15%;
-
-    //---------------------------------------------->
     @media screen and (min-width: 768px) {
         margin: 7.5% auto;
     }
-
     & a {
         color: ${brancoBg};
         font-size: 0.75rem;
@@ -19,3 +16,7 @@ export const BotaoVerAnalisantes = styled(Abstract)`
         text-decoration: none;
     }
 `;
+
+export default function BotaoVerAnalisantes() {
+    return <StyledBotaoVerAnalisantes></StyledBotaoVerAnalisantes>;
+}

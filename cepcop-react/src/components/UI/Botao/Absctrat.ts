@@ -16,7 +16,6 @@ export const Abstract = styled.button`
     box-shadow: 4px 10px 20px 0 rgba(10, 10, 132, 0.35);
     margin-left: 10%;
     transition: all 0.3s ease-in-out;
-
     &:hover {
         color: ${branco};
         font-size: 0.95rem;

@@ -1,12 +1,10 @@
 import { MdImage } from "react-icons/md";
-import { StyledIconDefault } from "./styled";
+import { StyledIconDefault } from "./styledIconDefault";
 
-function IconImage() {
+export default function IconImage() {
     return (
         <StyledIconDefault>
             <MdImage />
         </StyledIconDefault>
     );
 }
-
-export default IconImage;

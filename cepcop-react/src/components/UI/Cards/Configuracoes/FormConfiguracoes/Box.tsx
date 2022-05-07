@@ -1,9 +1,15 @@
-import React from "react";
 import IChildProp from "src/components/Interfaces/IChildProp";
-import { StyledBox } from "./styled";
+import styled from "styled-components";
 
-function Box(props: IChildProp) {
+const StyledBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1% 0;
+    width: 100%;
+`;
+
+export default function Box(props: IChildProp) {
     return <StyledBox>{props.children}</StyledBox>;
 }
-
-export default Box;

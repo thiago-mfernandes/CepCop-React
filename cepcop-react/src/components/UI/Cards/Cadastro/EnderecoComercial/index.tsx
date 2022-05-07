@@ -1,11 +1,5 @@
-import { StyledSecaoGenerica } from "../styled";
+import { StyledSecaoGenerica } from "../OutrasInformacoes";
 
-function EnderecoComercial() {
-    return (
-        <StyledSecaoGenerica>
-
-        </StyledSecaoGenerica>
-    )
+export default function EnderecoComercial() {
+    return <StyledSecaoGenerica></StyledSecaoGenerica>;
 }
-
-export default EnderecoComercial

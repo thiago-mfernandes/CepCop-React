@@ -15,7 +15,7 @@ import BotaoEscolherArquivo from "./BotaoEscolherArquivo";
 import { BotaoSalvarConfiguracoes } from "src/components/UI/Botao/BotaoSalvarConfiguracoes";
 import InputEscolherArquivo from "src/components/UI/Input/InputEscolherArquivo";
 
-function FormConfiguracoes() {
+export default function FormConfiguracoes() {
     return (
         <CardConfiguracoes>
             <Card>
@@ -127,5 +127,3 @@ function FormConfiguracoes() {
         </CardConfiguracoes>
     );
 }
-
-export default FormConfiguracoes;

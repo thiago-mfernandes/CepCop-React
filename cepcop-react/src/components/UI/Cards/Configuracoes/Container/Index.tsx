@@ -1,9 +1,20 @@
-import React from "react";
 import IChildProp from "src/components/Interfaces/IChildProp";
-import { StyledContainer } from "./styled";
+import styled from "styled-components";
 
-function Container(props: IChildProp) {
+const StyledContainer = styled.div`
+    background-color: rgb(231, 231, 233, 0.7);
+    border-radius: 48px 48px 0 0;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 2.5%;
+    padding: 5% 0 0.75%;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 10%;
+    }
+`;
+
+export default function Container(props: IChildProp) {
     return <StyledContainer>{props.children}</StyledContainer>;
 }
-
-export default Container;

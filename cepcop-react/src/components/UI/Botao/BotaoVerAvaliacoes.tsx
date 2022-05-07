@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { azulEscuroFosco } from "../variaveis";
 import { Abstract } from "./Absctrat";
 
-export const BotaoVerAvaliacoes = styled(Abstract)`
+const StyledBotaoVerAvaliacoes = styled(Abstract)`
     width: 50%;
     border: none;
     border-radius: 24px;
@@ -13,18 +13,18 @@ export const BotaoVerAvaliacoes = styled(Abstract)`
         border: 1px solid ${azulEscuroFosco};
         transition: all 0.3s ease-in-out;
     }
-
-    //-------------------------------------------------------->
     @media screen and (min-width: 768px) {
         height: 4vh;
         width: 35%;
         margin-top: 0;
         margin-left: 5%;
-
-        //---------------------------------------------------->
         &:hover {
             height: 4vh;
             width: 35%;
         }
     }
 `;
+
+export default function BotaoVerAvaliacoes() {
+    return <StyledBotaoVerAvaliacoes></StyledBotaoVerAvaliacoes>;
+}

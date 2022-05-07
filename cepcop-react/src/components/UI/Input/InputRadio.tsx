@@ -1,7 +1,12 @@
-import { StyledInputRadio } from "./styles";
+import styled from "styled-components";
+import { StyledInputPadrao } from "./InputPadrao";
 import IInputProps from "src/components/Interfaces/IInputProps";
 
-function InputRadio(props: IInputProps) {
+const StyledInputRadio = styled(StyledInputPadrao)`
+    margin-bottom: 2.5%;
+`;
+
+export default function InputRadio(props: IInputProps) {
     return (
         <StyledInputRadio
             type={props.typeInput}
@@ -11,5 +16,3 @@ function InputRadio(props: IInputProps) {
         />
     );
 }
-
-export default InputRadio;

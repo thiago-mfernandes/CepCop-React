@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { vermelhoPadrao, branco } from "../variaveis";
 import { Abstract } from "./Absctrat";
 
-export const BotaoCancelar = styled(Abstract)`
+const StyledBotaoCancelar = styled(Abstract)`
     color: ${branco};
     font-size: 0.75rem;
     height: 6vh;
@@ -19,10 +19,12 @@ export const BotaoCancelar = styled(Abstract)`
         border: 1px solid darkred;
         transition: all 0.3s ease-in-out;
     }
-
-    //------------------------------------->
     @media screen and (max-width: 768px) {
         height: 4vh;
         width: 15%;
     }
 `;
+
+export default function BotaoCancelar() {
+    return <StyledBotaoCancelar></StyledBotaoCancelar>;
+}

@@ -7,7 +7,7 @@ import EnderecoResidencial from "./EnderecoResidencial";
 import FormCadastro from "./FormCadastro";
 import OutrasInformacoes from "./OutrasInformacoes";
 
-function PageCadastro() {
+export default function PageCadastro() {
     return (
         <ContainerFundoAzul>
             <CardAlerta />
@@ -22,5 +22,3 @@ function PageCadastro() {
         </ContainerFundoAzul>
     );
 }
-
-export default PageCadastro;
