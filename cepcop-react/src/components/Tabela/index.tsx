@@ -8,7 +8,7 @@ import TBodyTd from "../Tabela/TBody/TBodyTd";
 import BotaoEditar from "../UI/Botao/BotaoEditar";
 import BotaoDeletar from "../UI/Botao/BotaoDeletar";
 
-function Tabela() {
+export default function Tabela() {
     return (
         <>
             <Table>
@@ -51,5 +51,3 @@ function Tabela() {
         </>
     );
 }
-
-export default Tabela;
