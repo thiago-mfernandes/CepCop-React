@@ -11,8 +11,29 @@ import EntradaDadosTelefone from "../EntradaDadosTelefone";
 import LabelCadastroObrigatorio from "src/components/UI/Label/LabelCadastroObrigatorio";
 import InputForm from "src/components/UI/Input/InputForm";
 import BotaoAdicionarNovo from "src/components/UI/Botao/BotaoAdicionarNovo";
+import ContainerNascimento from "../ContainerNascimento";
+import BoxConteudoNascimento from "../BoxConteudoNascimento";
+import BoxDiaMesAno from "../BoxDiaMesAno";
+import Label from "src/components/UI/Label/Label";
+import { useState } from "react";
+import Select from "../Select";
 
 export default function DadosPessoais() {
+
+    const [diaMes, setDiaMes] = useState([])
+
+    fetch("http://localhost:3000/listaDiaMes", {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then((resposta) => resposta.json())
+    .then((dados) => {
+        setDiaMes(dados)
+    })
+    .catch((err) => console.log(err))
+
     return (
         <StyledSecaoGenerica>
             <TituloBox>
@@ -110,6 +131,27 @@ export default function DadosPessoais() {
                         name={"profissao-mae"}
                         htmlFor={"profissao-mae"} 
                     />
+                    <ContainerNascimento>
+                        <LabelCadastroObrigatorio 
+                            conteudoLabel={"Data de Nascimento"} 
+                            htmlFor={""}
+                        />
+                        <BoxConteudoNascimento>
+                            <BoxDiaMesAno>
+                                <Label htmlFor={"dia"} children={"Dia"} />
+                                <Select valores={diaMes} name={"dia"}/>
+                            </BoxDiaMesAno>
+                            <BoxDiaMesAno>
+                                <Label htmlFor={""} children={"Mês"} />
+                                <select name="" id=""></select>
+                            </BoxDiaMesAno>
+                            <BoxDiaMesAno>
+                                <Label htmlFor={""} children={"Ano"} />
+                            </BoxDiaMesAno>
+                        </BoxConteudoNascimento>
+
+
+                    </ContainerNascimento>
 
                 </Opcoes>
             </TituloBox>

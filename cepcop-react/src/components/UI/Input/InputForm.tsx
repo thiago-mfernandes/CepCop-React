@@ -7,6 +7,7 @@ const StyledInputForm = styled(StyledInputPadrao)`
     margin-bottom: 5%;
     width: 100%;
 `;
+
 export default function InputForm(props: IInputProps) {
     return (
         <StyledInputForm

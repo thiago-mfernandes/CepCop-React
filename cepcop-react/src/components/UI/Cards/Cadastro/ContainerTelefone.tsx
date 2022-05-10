@@ -1,11 +1,9 @@
 import IChildProp from "src/components/Interfaces/IChildProp";
 import styled from "styled-components";
 import { cinzaMedio } from "../../variaveis";
+import { StyledContainer } from "./ContainerNascimento";
 
-const StyledContainerTelefone = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+const StyledContainerTelefone = styled(StyledContainer)`
     border-top: 1px solid ${cinzaMedio};
     border-bottom: 1px solid ${cinzaMedio};
     margin: 7.5% 0;
