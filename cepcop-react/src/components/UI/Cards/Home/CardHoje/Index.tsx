@@ -1,7 +1,7 @@
 import { branco, cinzaMedio } from "./../../../variaveis";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { BotaoVerAnalisantes } from "../../../Botao/BotaoVerAnalisantes";
+import BotaoVerAnalisantes from "../../../Botao/BotaoVerAnalisantes";
 import ContainerData from "./ContainerData";
 import ContainerInfo from "./ContainerInfo";
 import ContainerTotal from "./ContainerTotal";

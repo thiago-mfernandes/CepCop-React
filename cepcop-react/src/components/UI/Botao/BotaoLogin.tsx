@@ -1,3 +1,4 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import styled from "styled-components";
 import { Abstract } from "./Absctrat";
 
@@ -6,6 +7,6 @@ const StyledBotaoLogin = styled(Abstract)`
     width: 75%;
 `;
 
-export default function BotaoLogin() {
-    return <StyledBotaoLogin></StyledBotaoLogin>;
+export default function BotaoLogin(props: IChildProp) {
+    return <StyledBotaoLogin>{props.children}</StyledBotaoLogin>;
 }

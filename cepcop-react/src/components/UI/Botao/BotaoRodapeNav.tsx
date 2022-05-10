@@ -1,3 +1,4 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import styled from "styled-components";
 import { branco } from "../variaveis";
 
@@ -20,6 +21,6 @@ const StyledBotaoRodapeNav = styled.div`
     }
 `;
 
-export default function BotaoRodapeNav() {
-    return <StyledBotaoRodapeNav></StyledBotaoRodapeNav>;
+export default function BotaoRodapeNav(props: IChildProp) {
+    return <StyledBotaoRodapeNav>{props.children}</StyledBotaoRodapeNav>;
 }

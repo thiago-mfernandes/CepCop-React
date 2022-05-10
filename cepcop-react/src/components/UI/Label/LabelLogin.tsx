@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledLabel } from "./styled";
+import { StyledLabel } from "./Label";
 
 const StyledLabelLogin = styled(StyledLabel)`
     margin: 2% 0;

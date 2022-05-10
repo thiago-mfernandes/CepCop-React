@@ -1,5 +1,5 @@
 import { MdOutlineArrowBack, MdOutlineArrowForward } from "react-icons/md";
-import { BotaoRodapeNav } from "../UI/Botao/BotaoRodapeNav";
+import BotaoRodapeNav from "../UI/Botao/BotaoRodapeNav";
 import CaixaExibir from "./CaixaExibir";
 import Footer from "./Footer";
 import FooterContainer from "./FooterContainer";

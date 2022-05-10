@@ -1,3 +1,4 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import styled from "styled-components";
 import { azulEscuroFosco } from "../variaveis";
 import { Abstract } from "./Absctrat";
@@ -11,6 +12,6 @@ const StyledBotaoSalvarConfiguracoes = styled(Abstract)`
     }
 `;
 
-export default function BotaoSalvarConfiguracoes() {
-    return <StyledBotaoSalvarConfiguracoes></StyledBotaoSalvarConfiguracoes>;
+export default function BotaoSalvarConfiguracoes(props: IChildProp) {
+    return <StyledBotaoSalvarConfiguracoes>{props.children}</StyledBotaoSalvarConfiguracoes>;
 }

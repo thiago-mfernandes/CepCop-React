@@ -1,3 +1,4 @@
+import IChildProp from "src/components/Interfaces/IChildProp";
 import styled from "styled-components";
 import { brancoBg } from "../variaveis";
 import { Abstract } from "./Absctrat";
@@ -17,6 +18,6 @@ const StyledBotaoVerAnalisantes = styled(Abstract)`
     }
 `;
 
-export default function BotaoVerAnalisantes() {
-    return <StyledBotaoVerAnalisantes></StyledBotaoVerAnalisantes>;
+export default function BotaoVerAnalisantes(props: IChildProp) {
+    return <StyledBotaoVerAnalisantes>{props.children}</StyledBotaoVerAnalisantes>;
 }

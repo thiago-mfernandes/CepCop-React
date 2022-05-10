@@ -12,7 +12,7 @@ import Label from "src/components/UI/Label/Label";
 import InputForm from "src/components/UI/Input/InputForm";
 import ButtonBox from "./BoxButton";
 import BotaoEscolherArquivo from "./BotaoEscolherArquivo";
-import { BotaoSalvarConfiguracoes } from "src/components/UI/Botao/BotaoSalvarConfiguracoes";
+import BotaoSalvarConfiguracoes from "src/components/UI/Botao/BotaoSalvarConfiguracoes";
 import InputEscolherArquivo from "src/components/UI/Input/InputEscolherArquivo";
 
 export default function FormConfiguracoes() {

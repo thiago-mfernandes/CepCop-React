@@ -1,5 +1,5 @@
 import TituloModal from "src/components/Modais/TituloModal";
-import { BotaoLogin } from "../../Botao/BotaoLogin";
+import BotaoLogin from "../../Botao/BotaoLogin";
 import InputLogin from "../../Input/InputLogin";
 import LabelLogin from "../../Label/LabelLogin";
 import Box from "./Box";
