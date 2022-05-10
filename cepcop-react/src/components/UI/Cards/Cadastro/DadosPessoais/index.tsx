@@ -70,6 +70,47 @@ export default function DadosPessoais() {
                             </EntradaDadosTelefone>
                         </BoxTelefone>
                     </ContainerTelefone>
+                    <EntradaDados 
+                        labelObrigatorio={false}
+                        conteudoLabel={"Nome do Pai"}
+                        typeInput={"text"}
+                        placeholderInput={"Nome Completo"}
+                        nameInput={"nome-completo"}
+                        ariaDescribedbyInput={"textHelp"}
+                        name={"nome-pai"}
+                        htmlFor={"nome-pai"} 
+                    />
+                    <EntradaDados 
+                        labelObrigatorio={false}
+                        conteudoLabel={"Profissão do Pai"}
+                        typeInput={"text"}
+                        placeholderInput={"Ex.: Motorista"}
+                        nameInput={"nome-completo"}
+                        ariaDescribedbyInput={"textHelp"}
+                        name={"profissao-pai"}
+                        htmlFor={"profissao-pai"} 
+                    />
+                    <EntradaDados 
+                        labelObrigatorio={false}
+                        conteudoLabel={"Nome do Mãe"}
+                        typeInput={"text"}
+                        placeholderInput={"Nome Completo"}
+                        nameInput={"nome-completo"}
+                        ariaDescribedbyInput={"textHelp"}
+                        name={"nome-mae"}
+                        htmlFor={"nome-mae"} 
+                    />
+                     <EntradaDados 
+                        labelObrigatorio={false}
+                        conteudoLabel={"Profissão da Mãe"}
+                        typeInput={"text"}
+                        placeholderInput={"Ex.: Advogada"}
+                        nameInput={"nome-completo"}
+                        ariaDescribedbyInput={"textHelp"}
+                        name={"profissao-mae"}
+                        htmlFor={"profissao-mae"} 
+                    />
+
                 </Opcoes>
             </TituloBox>
         </StyledSecaoGenerica>
